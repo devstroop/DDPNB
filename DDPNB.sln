@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDPNB", "DDPNB\DDPNB.csproj", "{E665F725-AEB3-4A86-AB55-DC7BD9CDC1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDPNB.Common", "DDPNB.Common\DDPNB.Common.csproj", "{9EEAE2A9-0ADC-48F0-9413-77D163A35DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDPNB_CLIENT", "DDPNB_CLIENT\DDPNB_CLIENT.csproj", "{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E665F725-AEB3-4A86-AB55-DC7BD9CDC1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E665F725-AEB3-4A86-AB55-DC7BD9CDC1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E665F725-AEB3-4A86-AB55-DC7BD9CDC1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E665F725-AEB3-4A86-AB55-DC7BD9CDC1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEAE2A9-0ADC-48F0-9413-77D163A35DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEAE2A9-0ADC-48F0-9413-77D163A35DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEAE2A9-0ADC-48F0-9413-77D163A35DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEAE2A9-0ADC-48F0-9413-77D163A35DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14213F77-C6FF-45E9-8909-2E0E76F471BE}
+	EndGlobalSection
+EndGlobal
