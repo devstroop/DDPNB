@@ -8,6 +8,18 @@ namespace DDPNB
 {
     public class RESTAPI
     {
+        private string status;
+        public void Start()
+        {
 
+        }
+        public void Stop()
+        {
+
+        }
+        public string Status
+        {
+            get { return status; }
+        }
     }
 }

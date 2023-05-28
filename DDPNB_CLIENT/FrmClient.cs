@@ -17,9 +17,9 @@ namespace DDPNB_CLIENT.Forms
             InitializeComponent();
         }
 
-        private async void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var user = await DDPNB.Forms.FrmLogin.Login(host: "http://localhost:5001");
+            var user = DDPNB.Forms.FrmLogin.Login(host: "http://localhost:5001");
             if (user != null)
             {
                 MessageBox.Show($"Success: {user.Email}");

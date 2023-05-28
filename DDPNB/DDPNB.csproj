@@ -84,6 +84,10 @@
       <Project>{9eeae2a9-0adc-48f0-9413-77d163a35dde}</Project>
       <Name>DDPNB.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DDPNB.RESTAPI\DDPNB.RESTAPI.csproj">
+      <Project>{028258b3-e3cc-46ad-a264-f46493a78d72}</Project>
+      <Name>DDPNB.RESTAPI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

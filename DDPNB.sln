@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDPNB.Common", "DDPNB.Commo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDPNB_CLIENT", "DDPNB_CLIENT\DDPNB_CLIENT.csproj", "{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDPNB.RESTAPI", "DDPNB.RESTAPI\DDPNB.RESTAPI.csproj", "{028258B3-E3CC-46AD-A264-F46493A78D72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028258B3-E3CC-46AD-A264-F46493A78D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028258B3-E3CC-46AD-A264-F46493A78D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028258B3-E3CC-46AD-A264-F46493A78D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028258B3-E3CC-46AD-A264-F46493A78D72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
