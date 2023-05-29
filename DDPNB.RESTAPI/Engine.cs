@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DDPNB.ClientAPI
 {
-    public class APIService
+    public class Engine
     {
         private string status;
         public void Start()
