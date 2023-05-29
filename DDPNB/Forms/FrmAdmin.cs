@@ -17,32 +17,33 @@ namespace DDPNB.Forms
             InitializeComponent();
         }
 
-        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            /*var user = DDPNB.Forms.FrmLogin.Login(host: "http://localhost:5001");
-            if (user != null)
-            {
-                MessageBox.Show($"Success: {user.Email}");
-            }
-            else
-            {
-                MessageBox.Show($"Failed");
-            }*/
-        }
-
         private void FrmAdmin_Load(object sender, EventArgs e)
         {
             if (DDPNB.Common.LoggedInUser != null)
             {
+                this.usersToolStripMenuItem.Visible = true;
+                this.jobsToolStripMenuItem.Visible = true;
+                this.transactionsToolStripMenuItem.Visible = true;
+
                 this.loginToolStripMenuItem.Visible = false;
                 this.profileToolStripMenuItem.Visible = true;
                 this.logoutToolStripMenuItem.Visible = true;
+
+                this.profileToolStripMenuItem.Text = $"{Common.LoggedInUser.Email.Trim()}";
+                this.profileToolStripMenuItem.Image = global::DDPNB.Properties.Resources.accept_x16;
             }
             else
             {
+                this.usersToolStripMenuItem.Visible = false;
+                this.jobsToolStripMenuItem.Visible = false;
+                this.transactionsToolStripMenuItem.Visible = false;
+
                 this.loginToolStripMenuItem.Visible = true;
                 this.profileToolStripMenuItem.Visible = false;
                 this.logoutToolStripMenuItem.Visible = false;
+
+                this.profileToolStripMenuItem.Text = "Profile";
+                this.profileToolStripMenuItem.Image = global::DDPNB.Properties.Resources.warning_x16;
             }
         }
 
@@ -52,13 +53,28 @@ namespace DDPNB.Forms
             frmLogin.ShowDialog();
             if (Common.LoggedInUser != null)
             {
-                MessageBox.Show($"Success: {Common.LoggedInUser.Email}");
+                MessageBox.Show($"Success ({Common.LoggedInUser.Email.Trim()})");
             }
             else
             {
                 MessageBox.Show($"Failed");
             }
             FrmAdmin_Load(sender, e);
+        }
+
+        private void developerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new FrmDeveloper()).ShowDialog();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new FrmAbout()).ShowDialog();
+        }
+
+        private void releaseNoteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new FrmReleaseNote()).ShowDialog();
         }
     }
 }
