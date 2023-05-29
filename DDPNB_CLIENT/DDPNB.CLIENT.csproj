@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{40B559BA-C45B-4C0A-A335-F3B7E28CFCC6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DDPNB_CLIENT</RootNamespace>
-    <AssemblyName>DDPNB_CLIENT</AssemblyName>
+    <RootNamespace>DDPNB.CLIENT</RootNamespace>
+    <AssemblyName>DDPNB.CLIENT</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,15 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmClient.cs">
+    <Compile Include="Forms\FrmClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmClient.designer.cs">
+    <Compile Include="Forms\FrmClient.designer.cs">
       <DependentUpon>FrmClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmClient.resx">
+    <EmbeddedResource Include="Forms\FrmClient.resx">
       <DependentUpon>FrmClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

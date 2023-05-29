@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDPNB_CLIENT
+namespace CLIENT.DDPNB
 {
     internal static class Program
     {

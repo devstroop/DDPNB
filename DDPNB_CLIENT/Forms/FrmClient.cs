@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDPNB_CLIENT.Forms
+namespace CLIENT.DDPNB.Forms
 {
     public partial class FrmClient : Form
     {
@@ -19,15 +19,7 @@ namespace DDPNB_CLIENT.Forms
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var user = DDPNB.Forms.FrmLogin.Login(host: "http://localhost:5001");
-            if (user != null)
-            {
-                MessageBox.Show($"Success: {user.Email}");
-            }
-            else
-            {
-                MessageBox.Show($"Failed");
-            }
+            
         }
     }
 }

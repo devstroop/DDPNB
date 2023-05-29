@@ -1,4 +1,4 @@
-﻿namespace DDPNB_CLIENT.Forms
+﻿namespace CLIENT.DDPNB.Forms
 {
     partial class FrmClient
     {
