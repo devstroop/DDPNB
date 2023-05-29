@@ -67,9 +67,7 @@ namespace DDPNB.Forms
             {
                 try
                 {
-                    // Show New User Form
-                    // Create User
-                    // Assign Admin
+                    (new Users.FrmNewUser()).ShowDialog();
                     MessageBox.Show("Initial setup completed successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch(Exception exc)

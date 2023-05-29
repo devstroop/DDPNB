@@ -718,13 +718,13 @@ namespace DDPNB.Data
 		
 		private string _Password;
 		
-		private System.DateTime _CreatedAt;
+		private System.Nullable<System.DateTime> _CreatedAt;
 		
 		private System.Nullable<System.DateTime> _UpdatedAt;
 		
-		private string _CreatedBy;
+		private System.Nullable<int> _CreatedBy;
 		
-		private string _UpdatedBy;
+		private System.Nullable<int> _UpdatedBy;
 		
 		private string _Address;
 		
@@ -748,13 +748,13 @@ namespace DDPNB.Data
     partial void OnPhoneChanged();
     partial void OnPasswordChanging(string value);
     partial void OnPasswordChanged();
-    partial void OnCreatedAtChanging(System.DateTime value);
+    partial void OnCreatedAtChanging(System.Nullable<System.DateTime> value);
     partial void OnCreatedAtChanged();
     partial void OnUpdatedAtChanging(System.Nullable<System.DateTime> value);
     partial void OnUpdatedAtChanged();
-    partial void OnCreatedByChanging(string value);
+    partial void OnCreatedByChanging(System.Nullable<int> value);
     partial void OnCreatedByChanged();
-    partial void OnUpdatedByChanging(string value);
+    partial void OnUpdatedByChanging(System.Nullable<int> value);
     partial void OnUpdatedByChanged();
     partial void OnAddressChanging(string value);
     partial void OnAddressChanged();
@@ -871,8 +871,8 @@ namespace DDPNB.Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedAt", DbType="DateTime NOT NULL")]
-		public System.DateTime CreatedAt
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedAt", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CreatedAt
 		{
 			get
 			{
@@ -911,8 +911,8 @@ namespace DDPNB.Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="NChar(16) NOT NULL", CanBeNull=false)]
-		public string CreatedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="Int")]
+		public System.Nullable<int> CreatedBy
 		{
 			get
 			{
@@ -931,8 +931,8 @@ namespace DDPNB.Data
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedBy", DbType="NChar(16)")]
-		public string UpdatedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UpdatedBy", DbType="Int")]
+		public System.Nullable<int> UpdatedBy
 		{
 			get
 			{

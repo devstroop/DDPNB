@@ -14,9 +14,16 @@ namespace DDPNB.Forms.Users
     {
         Data.DataClassesDataContext data = new Data.DataClassesDataContext();
         List<Data.UserRole> userRoles = new List<Data.UserRole>();
+        Data.UserRole Role { get; set; }
+
         public FrmNewUser()
         {
             InitializeComponent();
+        }
+        public FrmNewUser(Data.UserRole Role)
+        {
+            InitializeComponent();
+            this.Role = Role;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -34,18 +41,17 @@ namespace DDPNB.Forms.Users
                 user.Phone = this.tBoxPhone.Text;
                 user.Address = this.tBoxAddress.Text;
                 user.Password = this.tBoxPassword.Text;
-                user.UserRoleId = 1; // Take dynamic value
+                user.UserRoleId = this.Role != null ? Role.Id : 0; // Take dynamic value
                 user.MultiSession = this.chkBoxMultiSession.Checked;
                 user.Active = this.chkBoxActive.Checked;
 
                 user.CreatedAt = DateTime.Now;
-                user.CreatedBy = Common.User.Id;
-
-
+                user.CreatedBy = Common.User != null ? Common.User.Id : null;
 
                 data.Users.InsertOnSubmit(user);
                 data.SubmitChanges();
                 MessageBox.Show("User successfully created.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
             catch(Exception exc)
             {
