@@ -41,7 +41,6 @@ namespace DDPNB.Forms.Users
                 this.tBoxAddress.Text = user.Address.Trim();
                 try
                 {
-                    Console.WriteLine(user.UserRoleId);
                     foreach(var role in userRoles)
                     {
                         if(role != null && role.Id == user.UserRoleId)
@@ -102,10 +101,42 @@ namespace DDPNB.Forms.Users
         {
             user.UserRoleId = cmbBoxRole.SelectedIndex;
         }
-
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            data.SubmitChanges();
+            try
+            {
+                var existingUser = data.Users.SingleOrDefault(u => u.Id == user.Id);
+
+                if (existingUser != null)
+                {
+                    existingUser.Name = tBoxName.Text.Trim();
+                    existingUser.Email = tBoxEmail.Text.Trim();
+                    existingUser.Phone = tBoxPhone.Text.Trim();
+                    existingUser.Address = tBoxAddress.Text.Trim();
+                    existingUser.UserRoleId = cmbBoxRole.SelectedIndex;
+                    existingUser.Active = chkBoxActive.Checked;
+                    existingUser.MultiSession = chkBoxMultiSession.Checked;
+                    existingUser.UpdatedAt = DateTime.Now;
+                    existingUser.UpdatedBy = Common.User.Id;
+
+                    data.SubmitChanges();
+                    MessageBox.Show("Modified successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

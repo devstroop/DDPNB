@@ -240,6 +240,7 @@
             this.btnCancel.TabIndex = 18;
             this.btnCancel.Text = "Cancel (ESC)";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSubmit
             // 
