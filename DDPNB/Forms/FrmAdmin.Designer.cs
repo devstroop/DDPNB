@@ -742,7 +742,7 @@
             this.MainMenuStrip = this.menuStripTop;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAdmin";
-            this.Text = "DD PNB Admin";
+            this.Text = "DD PNB [Admin]";
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.menuStripTop.ResumeLayout(false);
             this.menuStripTop.PerformLayout();
