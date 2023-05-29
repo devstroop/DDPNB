@@ -46,7 +46,7 @@ namespace DDPNB.Forms.Users
                 user.Active = this.chkBoxActive.Checked;
 
                 user.CreatedAt = DateTime.Now;
-                user.CreatedBy = Common.User != null ? Common.User.Id : null;
+                user.CreatedBy = Common.User != null ? (int?)Common.User.Id : null;
 
                 data.Users.InsertOnSubmit(user);
                 data.SubmitChanges();
@@ -62,7 +62,12 @@ namespace DDPNB.Forms.Users
         private void FrmNewUser_Load(object sender, EventArgs e)
         {
             this.userRoles = data.UserRoles.ToList();
-            this.cmbBoxRole.DataSource = this.userRoles.Select(elem => elem.Name).ToList();
+            this.cmbBoxRole.DataSource = this.userRoles.Select(elem => elem.Name.Trim()).ToList();
+        }
+
+        private void cmbBoxRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.Role = data.UserRoles.Single(elem => elem.Name.Trim() == this.cmbBoxRole.Text.Trim());
         }
     }
 }

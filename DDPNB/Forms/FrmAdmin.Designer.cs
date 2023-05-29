@@ -354,13 +354,6 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(210, 6);
             // 
-            // findUsersToolStripMenuItem
-            // 
-            this.findUsersToolStripMenuItem.Name = "findUsersToolStripMenuItem";
-            this.findUsersToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.findUsersToolStripMenuItem.Text = "Find Users";
-            this.findUsersToolStripMenuItem.Click += new System.EventHandler(this.findUsersToolStripMenuItem_Click);
-            // 
             // allUsersToolStripMenuItem
             // 
             this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";

@@ -48,9 +48,11 @@
             this.panelFooter = new System.Windows.Forms.Panel();
             this.panelHead = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelbody.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.panelHead.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblName
@@ -150,11 +152,12 @@
             this.cmbBoxRole.Name = "cmbBoxRole";
             this.cmbBoxRole.Size = new System.Drawing.Size(194, 21);
             this.cmbBoxRole.TabIndex = 16;
+            this.cmbBoxRole.SelectedIndexChanged += new System.EventHandler(this.cmbBoxRole_SelectedIndexChanged);
             // 
             // btnSubmit
             // 
             this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmit.Location = new System.Drawing.Point(392, 3);
+            this.btnSubmit.Location = new System.Drawing.Point(388, 3);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(87, 23);
             this.btnSubmit.TabIndex = 17;
@@ -165,7 +168,7 @@
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(485, 3);
+            this.btnCancel.Location = new System.Drawing.Point(481, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(88, 23);
             this.btnCancel.TabIndex = 18;
@@ -198,6 +201,7 @@
             this.panelbody.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelbody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelbody.Controls.Add(this.tBoxName);
             this.panelbody.Controls.Add(this.lblName);
             this.panelbody.Controls.Add(this.chkBoxActive);
@@ -212,28 +216,30 @@
             this.panelbody.Controls.Add(this.lblPassword);
             this.panelbody.Controls.Add(this.lblAddress);
             this.panelbody.Controls.Add(this.tBoxAddress);
-            this.panelbody.Location = new System.Drawing.Point(12, 42);
+            this.panelbody.Location = new System.Drawing.Point(3, 38);
             this.panelbody.Name = "panelbody";
-            this.panelbody.Size = new System.Drawing.Size(576, 138);
+            this.panelbody.Size = new System.Drawing.Size(576, 176);
             this.panelbody.TabIndex = 22;
             // 
             // panelFooter
             // 
             this.panelFooter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFooter.Controls.Add(this.btnCancel);
             this.panelFooter.Controls.Add(this.btnSubmit);
-            this.panelFooter.Location = new System.Drawing.Point(12, 186);
+            this.panelFooter.Location = new System.Drawing.Point(4, 220);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(576, 29);
+            this.panelFooter.Size = new System.Drawing.Size(574, 29);
             this.panelFooter.TabIndex = 23;
             // 
             // panelHead
             // 
             this.panelHead.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelHead.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHead.Controls.Add(this.lblTitle);
-            this.panelHead.Location = new System.Drawing.Point(12, 7);
+            this.panelHead.Location = new System.Drawing.Point(3, 3);
             this.panelHead.Name = "panelHead";
             this.panelHead.Size = new System.Drawing.Size(576, 29);
             this.panelHead.TabIndex = 25;
@@ -245,22 +251,33 @@
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTitle.Location = new System.Drawing.Point(254, 4);
+            this.lblTitle.Location = new System.Drawing.Point(253, 3);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Padding = new System.Windows.Forms.Padding(3);
             this.lblTitle.Size = new System.Drawing.Size(68, 21);
             this.lblTitle.TabIndex = 25;
             this.lblTitle.Text = "New User";
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.panelHead);
+            this.panel1.Controls.Add(this.panelbody);
+            this.panel1.Controls.Add(this.panelFooter);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(583, 254);
+            this.panel1.TabIndex = 26;
+            // 
             // FrmNewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 225);
-            this.Controls.Add(this.panelHead);
-            this.Controls.Add(this.panelFooter);
-            this.Controls.Add(this.panelbody);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(605, 278);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmNewUser";
             this.Text = "New User";
             this.Load += new System.EventHandler(this.FrmNewUser_Load);
@@ -269,6 +286,7 @@
             this.panelFooter.ResumeLayout(false);
             this.panelHead.ResumeLayout(false);
             this.panelHead.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -295,5 +313,6 @@
         private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Panel panelHead;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel panel1;
     }
 }

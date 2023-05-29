@@ -192,11 +192,6 @@ namespace DDPNB.Forms
             (new Users.FrmSuspentActivateUser(){ MdiParent = this }).Show();
         }
 
-        private void findUsersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            (new Users.FrmFindUsers(){ MdiParent = this }).Show();
-        }
-
         private void allUsersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             (new Users.FrmAllUsers(){ MdiParent = this }).Show();

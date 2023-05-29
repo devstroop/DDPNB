@@ -179,12 +179,6 @@
     <Compile Include="Forms\Users\FrmDeleteUser.Designer.cs">
       <DependentUpon>FrmDeleteUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Users\FrmFindUsers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Users\FrmFindUsers.Designer.cs">
-      <DependentUpon>FrmFindUsers.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Users\FrmModifyUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +190,12 @@
     </Compile>
     <Compile Include="Forms\Users\FrmNewUser.Designer.cs">
       <DependentUpon>FrmNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\FrmPickUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmPickUser.Designer.cs">
+      <DependentUpon>FrmPickUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Users\FrmSuspentActivateUser.cs">
       <SubType>Form</SubType>
@@ -307,14 +307,14 @@
     <EmbeddedResource Include="Forms\Users\FrmDeleteUser.resx">
       <DependentUpon>FrmDeleteUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Users\FrmFindUsers.resx">
-      <DependentUpon>FrmFindUsers.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\FrmModifyUser.resx">
       <DependentUpon>FrmModifyUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\FrmNewUser.resx">
       <DependentUpon>FrmNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\FrmPickUser.resx">
+      <DependentUpon>FrmPickUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\FrmSuspentActivateUser.resx">
       <DependentUpon>FrmSuspentActivateUser.cs</DependentUpon>

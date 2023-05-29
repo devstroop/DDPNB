@@ -36,9 +36,8 @@ namespace DDPNB.Forms.Users
                 this.dgvUsers.DataSource = users.Where(elem => elem.Email.ToLower().Trim().Contains(this.tBoxSearch.Text.ToLower().Trim())).ToList();
         }
 
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            (new Users.FrmNewUser() { MdiParent = this.MdiParent}).Show();
-        }
+        private void btnNew_Click(object sender, EventArgs e) => (new Users.FrmNewUser() { MdiParent = this.MdiParent }).Show();
+
+        private void btnRefresh_Click(object sender, EventArgs e) => FrmAllUsers_Load(sender, e);
     }
 }

@@ -19,7 +19,7 @@ namespace DDPNB
                 {
                     return null;
                 }
-                return data.Users.SingleOrDefault(x => x.Id == Session.UserId);
+                return data.Users.Single(x => x.Id == Session.UserId);
 
             } 
         }
