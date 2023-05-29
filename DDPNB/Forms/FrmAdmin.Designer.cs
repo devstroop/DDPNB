@@ -81,6 +81,10 @@
             this.importExportToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.importFromJSONToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToJSONToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.importExportToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.importFromJSONToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportToJSONToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -215,7 +219,9 @@
             this.deleteUserToolStripMenuItem,
             this.suspendUserToolStripMenuItem,
             this.toolStripSeparator1,
-            this.allUsersToolStripMenuItem});
+            this.allUsersToolStripMenuItem,
+            this.toolStripSeparator8,
+            this.importExportToolStripMenuItem3});
             this.usersToolStripMenuItem.Image = global::DDPNB.Properties.Resources.user_x16;
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(69, 21);
@@ -320,6 +326,7 @@
             this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
             this.configurationToolStripMenuItem.Size = new System.Drawing.Size(119, 21);
             this.configurationToolStripMenuItem.Text = "Configuration";
+            this.configurationToolStripMenuItem.Click += new System.EventHandler(this.configurationToolStripMenuItem_Click);
             // 
             // microservicesToolStripMenuItem
             // 
@@ -484,6 +491,32 @@
             this.exportToJSONToolStripMenuItem2.Size = new System.Drawing.Size(187, 22);
             this.exportToJSONToolStripMenuItem2.Text = "Export to JSON";
             // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(177, 6);
+            // 
+            // importExportToolStripMenuItem3
+            // 
+            this.importExportToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importFromJSONToolStripMenuItem3,
+            this.exportToJSONToolStripMenuItem3});
+            this.importExportToolStripMenuItem3.Name = "importExportToolStripMenuItem3";
+            this.importExportToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.importExportToolStripMenuItem3.Text = "Import/Export";
+            // 
+            // importFromJSONToolStripMenuItem3
+            // 
+            this.importFromJSONToolStripMenuItem3.Name = "importFromJSONToolStripMenuItem3";
+            this.importFromJSONToolStripMenuItem3.Size = new System.Drawing.Size(187, 22);
+            this.importFromJSONToolStripMenuItem3.Text = "Import from JSON";
+            // 
+            // exportToJSONToolStripMenuItem3
+            // 
+            this.exportToJSONToolStripMenuItem3.Name = "exportToJSONToolStripMenuItem3";
+            this.exportToJSONToolStripMenuItem3.Size = new System.Drawing.Size(187, 22);
+            this.exportToJSONToolStripMenuItem3.Text = "Export to JSON";
+            // 
             // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -562,5 +595,9 @@
         private System.Windows.Forms.ToolStripMenuItem importExportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importFromJSONToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToJSONToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripMenuItem importExportToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem importFromJSONToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem exportToJSONToolStripMenuItem3;
     }
 }

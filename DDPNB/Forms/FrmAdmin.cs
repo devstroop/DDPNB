@@ -103,5 +103,9 @@ namespace DDPNB.Forms
             (new FrmReleaseNote()).ShowDialog();
         }
 
+        private void configurationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new FrmConfiguration()).ShowDialog();
+        }
     }
 }
