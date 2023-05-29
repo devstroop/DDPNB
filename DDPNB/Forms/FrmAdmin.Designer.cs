@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.jobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newJobToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifyJobToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +48,10 @@
             this.suspendTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.allTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.microservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suspendMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.allMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifyUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,35 +67,41 @@
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.microservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.exportJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupRestoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.allMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.suspendMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.importExportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importFromJSONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importExportToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.importFromJSONToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToJSONToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToJSONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.importExportToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.importFromJSONToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToJSONToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.importExportToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.importFromJSONToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToJSONToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -101,6 +116,7 @@
             this.logoutToolStripMenuItem,
             this.profileToolStripMenuItem,
             this.loginToolStripMenuItem,
+            this.utilityToolStripMenuItem,
             this.configurationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -108,6 +124,47 @@
             this.menuStrip1.Size = new System.Drawing.Size(925, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripLabel1,
+            this.toolStripLabel2});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 536);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(925, 25);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(175, 22);
+            this.toolStripLabel1.Text = "DD PNB PORTAL v1.0 (3rd Party)";
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(68, 22);
+            this.toolStripLabel2.Text = "Status: IDLE";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(67, 22);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::DDPNB.Properties.Resources.info_x16;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // jobsToolStripMenuItem
             // 
@@ -117,9 +174,7 @@
             this.deleteJobToolStripMenuItem,
             this.suspendJobToolStripMenuItem,
             this.toolStripSeparator2,
-            this.allJobsToolStripMenuItem,
-            this.toolStripSeparator6,
-            this.importExportToolStripMenuItem2});
+            this.allJobsToolStripMenuItem});
             this.jobsToolStripMenuItem.Image = global::DDPNB.Properties.Resources.suitcase_x16;
             this.jobsToolStripMenuItem.Name = "jobsToolStripMenuItem";
             this.jobsToolStripMenuItem.Size = new System.Drawing.Size(63, 21);
@@ -168,9 +223,7 @@
             this.deleteTransactionToolStripMenuItem,
             this.suspendTransactionToolStripMenuItem,
             this.toolStripSeparator3,
-            this.allTransactionsToolStripMenuItem,
-            this.toolStripSeparator7,
-            this.importExportToolStripMenuItem1});
+            this.allTransactionsToolStripMenuItem});
             this.transactionsToolStripMenuItem1.Image = global::DDPNB.Properties.Resources.cash_flow_x16;
             this.transactionsToolStripMenuItem1.Name = "transactionsToolStripMenuItem1";
             this.transactionsToolStripMenuItem1.Size = new System.Drawing.Size(111, 21);
@@ -211,6 +264,34 @@
             this.allTransactionsToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.allTransactionsToolStripMenuItem.Text = "All Transactions";
             // 
+            // microservicesToolStripMenuItem
+            // 
+            this.microservicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.suspendMicroservicesToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.allMicroservicesToolStripMenuItem});
+            this.microservicesToolStripMenuItem.Image = global::DDPNB.Properties.Resources.cube_x16;
+            this.microservicesToolStripMenuItem.Name = "microservicesToolStripMenuItem";
+            this.microservicesToolStripMenuItem.Size = new System.Drawing.Size(118, 21);
+            this.microservicesToolStripMenuItem.Text = "Microservices";
+            // 
+            // suspendMicroservicesToolStripMenuItem
+            // 
+            this.suspendMicroservicesToolStripMenuItem.Name = "suspendMicroservicesToolStripMenuItem";
+            this.suspendMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.suspendMicroservicesToolStripMenuItem.Text = "Suspend Microservices";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(211, 6);
+            // 
+            // allMicroservicesToolStripMenuItem
+            // 
+            this.allMicroservicesToolStripMenuItem.Name = "allMicroservicesToolStripMenuItem";
+            this.allMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.allMicroservicesToolStripMenuItem.Text = "All Microservices";
+            // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -219,9 +300,7 @@
             this.deleteUserToolStripMenuItem,
             this.suspendUserToolStripMenuItem,
             this.toolStripSeparator1,
-            this.allUsersToolStripMenuItem,
-            this.toolStripSeparator8,
-            this.importExportToolStripMenuItem3});
+            this.allUsersToolStripMenuItem});
             this.usersToolStripMenuItem.Image = global::DDPNB.Properties.Resources.user_x16;
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(69, 21);
@@ -322,65 +401,125 @@
             // 
             // configurationToolStripMenuItem
             // 
-            this.configurationToolStripMenuItem.Image = global::DDPNB.Properties.Resources.wrench_x16;
+            this.configurationToolStripMenuItem.Image = global::DDPNB.Properties.Resources.cogwheel_x16;
             this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
             this.configurationToolStripMenuItem.Size = new System.Drawing.Size(119, 21);
             this.configurationToolStripMenuItem.Text = "Configuration";
             this.configurationToolStripMenuItem.Click += new System.EventHandler(this.configurationToolStripMenuItem_Click);
             // 
-            // microservicesToolStripMenuItem
+            // utilityToolStripMenuItem
             // 
-            this.microservicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.suspendMicroservicesToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.allMicroservicesToolStripMenuItem,
+            this.utilityToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importExportToolStripMenuItem,
+            this.backupRestoreToolStripMenuItem});
+            this.utilityToolStripMenuItem.Image = global::DDPNB.Properties.Resources.wrench_x16;
+            this.utilityToolStripMenuItem.Name = "utilityToolStripMenuItem";
+            this.utilityToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
+            this.utilityToolStripMenuItem.Text = "Utility";
+            // 
+            // importExportToolStripMenuItem
+            // 
+            this.importExportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importJobsToolStripMenuItem,
+            this.importTransactionsToolStripMenuItem,
+            this.importMicroservicesToolStripMenuItem,
+            this.importUsersToolStripMenuItem,
+            this.importAllToolStripMenuItem,
             this.toolStripSeparator5,
-            this.importExportToolStripMenuItem});
-            this.microservicesToolStripMenuItem.Image = global::DDPNB.Properties.Resources.cube_x16;
-            this.microservicesToolStripMenuItem.Name = "microservicesToolStripMenuItem";
-            this.microservicesToolStripMenuItem.Size = new System.Drawing.Size(118, 21);
-            this.microservicesToolStripMenuItem.Text = "Microservices";
+            this.exportJobsToolStripMenuItem,
+            this.exportTransactionsToolStripMenuItem,
+            this.exportMicroservicesToolStripMenuItem,
+            this.exportUsersToolStripMenuItem,
+            this.exportAllToolStripMenuItem});
+            this.importExportToolStripMenuItem.Name = "importExportToolStripMenuItem";
+            this.importExportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importExportToolStripMenuItem.Text = "Import/Export";
             // 
-            // toolStrip1
+            // importJobsToolStripMenuItem
             // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripLabel1,
-            this.toolStripLabel2});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 536);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(925, 25);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
+            this.importJobsToolStripMenuItem.Name = "importJobsToolStripMenuItem";
+            this.importJobsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.importJobsToolStripMenuItem.Text = "Import Jobs";
             // 
-            // toolStripButton1
+            // importTransactionsToolStripMenuItem
             // 
-            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::DDPNB.Properties.Resources.info_x16;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.importTransactionsToolStripMenuItem.Name = "importTransactionsToolStripMenuItem";
+            this.importTransactionsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.importTransactionsToolStripMenuItem.Text = "Import Transactions";
             // 
-            // toolStripLabel1
+            // importMicroservicesToolStripMenuItem
             // 
-            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(175, 22);
-            this.toolStripLabel1.Text = "DD PNB PORTAL v1.0 (3rd Party)";
+            this.importMicroservicesToolStripMenuItem.Name = "importMicroservicesToolStripMenuItem";
+            this.importMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.importMicroservicesToolStripMenuItem.Text = "Import Microservices";
             // 
-            // toolStripLabel2
+            // importUsersToolStripMenuItem
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(68, 22);
-            this.toolStripLabel2.Text = "Status: IDLE";
+            this.importUsersToolStripMenuItem.Name = "importUsersToolStripMenuItem";
+            this.importUsersToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.importUsersToolStripMenuItem.Text = "Import Users";
             // 
-            // toolStripMenuItem2
+            // importAllToolStripMenuItem
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(67, 22);
+            this.importAllToolStripMenuItem.Name = "importAllToolStripMenuItem";
+            this.importAllToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.importAllToolStripMenuItem.Text = "Import All";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(201, 6);
+            // 
+            // exportJobsToolStripMenuItem
+            // 
+            this.exportJobsToolStripMenuItem.Name = "exportJobsToolStripMenuItem";
+            this.exportJobsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.exportJobsToolStripMenuItem.Text = "Export Jobs";
+            // 
+            // exportTransactionsToolStripMenuItem
+            // 
+            this.exportTransactionsToolStripMenuItem.Name = "exportTransactionsToolStripMenuItem";
+            this.exportTransactionsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.exportTransactionsToolStripMenuItem.Text = "Export Transactions";
+            // 
+            // exportMicroservicesToolStripMenuItem
+            // 
+            this.exportMicroservicesToolStripMenuItem.Name = "exportMicroservicesToolStripMenuItem";
+            this.exportMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.exportMicroservicesToolStripMenuItem.Text = "Export Microservices";
+            // 
+            // exportUsersToolStripMenuItem
+            // 
+            this.exportUsersToolStripMenuItem.Name = "exportUsersToolStripMenuItem";
+            this.exportUsersToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.exportUsersToolStripMenuItem.Text = "Export Users";
+            // 
+            // exportAllToolStripMenuItem
+            // 
+            this.exportAllToolStripMenuItem.Name = "exportAllToolStripMenuItem";
+            this.exportAllToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.exportAllToolStripMenuItem.Text = "Export All";
+            // 
+            // backupRestoreToolStripMenuItem
+            // 
+            this.backupRestoreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backupToolStripMenuItem,
+            this.restoreToolStripMenuItem});
+            this.backupRestoreToolStripMenuItem.Name = "backupRestoreToolStripMenuItem";
+            this.backupRestoreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backupRestoreToolStripMenuItem.Text = "Backup/Restore";
+            // 
+            // backupToolStripMenuItem
+            // 
+            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.backupToolStripMenuItem.Text = "Backup";
+            // 
+            // restoreToolStripMenuItem
+            // 
+            this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
+            this.restoreToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.restoreToolStripMenuItem.Text = "Restore";
             // 
             // transactionsToolStripMenuItem
             // 
@@ -396,132 +535,152 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(67, 22);
             // 
-            // allMicroservicesToolStripMenuItem
+            // flowLayoutPanel1
             // 
-            this.allMicroservicesToolStripMenuItem.Name = "allMicroservicesToolStripMenuItem";
-            this.allMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.allMicroservicesToolStripMenuItem.Text = "All Microservices";
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Controls.Add(this.button3);
+            this.flowLayoutPanel1.Controls.Add(this.button4);
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.button5);
+            this.flowLayoutPanel1.Controls.Add(this.button6);
+            this.flowLayoutPanel1.Controls.Add(this.button7);
+            this.flowLayoutPanel1.Controls.Add(this.button8);
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(788, 25);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(137, 511);
+            this.flowLayoutPanel1.TabIndex = 4;
             // 
-            // toolStripSeparator4
+            // panel1
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(211, 6);
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(134, 28);
+            this.panel1.TabIndex = 0;
             // 
-            // suspendMicroservicesToolStripMenuItem
+            // button1
             // 
-            this.suspendMicroservicesToolStripMenuItem.Name = "suspendMicroservicesToolStripMenuItem";
-            this.suspendMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.suspendMicroservicesToolStripMenuItem.Text = "Suspend Microservices";
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(3, 37);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "F1. Help";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // toolStripSeparator5
+            // button2
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(211, 6);
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(3, 66);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(134, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "F2. New Job";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // importExportToolStripMenuItem
+            // button3
             // 
-            this.importExportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importFromJSONToolStripMenuItem,
-            this.exportToJSONToolStripMenuItem});
-            this.importExportToolStripMenuItem.Name = "importExportToolStripMenuItem";
-            this.importExportToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.importExportToolStripMenuItem.Text = "Import/Export";
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(3, 95);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(134, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "F3. New Transaction";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // importFromJSONToolStripMenuItem
+            // button4
             // 
-            this.importFromJSONToolStripMenuItem.Name = "importFromJSONToolStripMenuItem";
-            this.importFromJSONToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.importFromJSONToolStripMenuItem.Text = "Import from JSON";
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(3, 124);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(134, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "F4. New User";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // importExportToolStripMenuItem1
+            // button5
             // 
-            this.importExportToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importFromJSONToolStripMenuItem1,
-            this.exportToJSONToolStripMenuItem1});
-            this.importExportToolStripMenuItem1.Name = "importExportToolStripMenuItem1";
-            this.importExportToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
-            this.importExportToolStripMenuItem1.Text = "Import/Export";
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(3, 186);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(134, 23);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "F5. All Jobs";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // importFromJSONToolStripMenuItem1
+            // button6
             // 
-            this.importFromJSONToolStripMenuItem1.Name = "importFromJSONToolStripMenuItem1";
-            this.importFromJSONToolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
-            this.importFromJSONToolStripMenuItem1.Text = "Import from JSON";
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(3, 215);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(134, 23);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "F6. All Transactions";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = true;
             // 
-            // exportToJSONToolStripMenuItem1
+            // button7
             // 
-            this.exportToJSONToolStripMenuItem1.Name = "exportToJSONToolStripMenuItem1";
-            this.exportToJSONToolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
-            this.exportToJSONToolStripMenuItem1.Text = "Export to JSON";
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(3, 244);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(134, 23);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "F7. All Users";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
             // 
-            // exportToJSONToolStripMenuItem
+            // button8
             // 
-            this.exportToJSONToolStripMenuItem.Name = "exportToJSONToolStripMenuItem";
-            this.exportToJSONToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.exportToJSONToolStripMenuItem.Text = "Export to JSON";
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(3, 273);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(134, 23);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "F8. All Microservices";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = true;
             // 
-            // toolStripSeparator6
+            // label1
             // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(25, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Shortcut Keys";
             // 
-            // toolStripSeparator7
+            // panel2
             // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(198, 6);
+            this.panel2.Location = new System.Drawing.Point(3, 153);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(134, 27);
+            this.panel2.TabIndex = 9;
             // 
-            // importExportToolStripMenuItem2
+            // panel3
             // 
-            this.importExportToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importFromJSONToolStripMenuItem2,
-            this.exportToJSONToolStripMenuItem2});
-            this.importExportToolStripMenuItem2.Name = "importExportToolStripMenuItem2";
-            this.importExportToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.importExportToolStripMenuItem2.Text = "Import/Export";
-            // 
-            // importFromJSONToolStripMenuItem2
-            // 
-            this.importFromJSONToolStripMenuItem2.Name = "importFromJSONToolStripMenuItem2";
-            this.importFromJSONToolStripMenuItem2.Size = new System.Drawing.Size(187, 22);
-            this.importFromJSONToolStripMenuItem2.Text = "Import from JSON";
-            // 
-            // exportToJSONToolStripMenuItem2
-            // 
-            this.exportToJSONToolStripMenuItem2.Name = "exportToJSONToolStripMenuItem2";
-            this.exportToJSONToolStripMenuItem2.Size = new System.Drawing.Size(187, 22);
-            this.exportToJSONToolStripMenuItem2.Text = "Export to JSON";
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(177, 6);
-            // 
-            // importExportToolStripMenuItem3
-            // 
-            this.importExportToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importFromJSONToolStripMenuItem3,
-            this.exportToJSONToolStripMenuItem3});
-            this.importExportToolStripMenuItem3.Name = "importExportToolStripMenuItem3";
-            this.importExportToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.importExportToolStripMenuItem3.Text = "Import/Export";
-            // 
-            // importFromJSONToolStripMenuItem3
-            // 
-            this.importFromJSONToolStripMenuItem3.Name = "importFromJSONToolStripMenuItem3";
-            this.importFromJSONToolStripMenuItem3.Size = new System.Drawing.Size(187, 22);
-            this.importFromJSONToolStripMenuItem3.Text = "Import from JSON";
-            // 
-            // exportToJSONToolStripMenuItem3
-            // 
-            this.exportToJSONToolStripMenuItem3.Name = "exportToJSONToolStripMenuItem3";
-            this.exportToJSONToolStripMenuItem3.Size = new System.Drawing.Size(187, 22);
-            this.exportToJSONToolStripMenuItem3.Text = "Export to JSON";
+            this.panel3.Location = new System.Drawing.Point(3, 302);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(134, 27);
+            this.panel3.TabIndex = 10;
             // 
             // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 561);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -535,6 +694,9 @@
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -580,24 +742,37 @@
         private System.Windows.Forms.ToolStripMenuItem configurationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem microservicesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripMenuItem importExportToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem importFromJSONToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem exportToJSONToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripMenuItem importExportToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem importFromJSONToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem exportToJSONToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem suspendMicroservicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem allMicroservicesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem utilityToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importExportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem importFromJSONToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportToJSONToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
-        private System.Windows.Forms.ToolStripMenuItem importExportToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem importFromJSONToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem exportToJSONToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem importJobsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importTransactionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importMicroservicesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importUsersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem exportJobsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportTransactionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportMicroservicesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportUsersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backupRestoreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restoreToolStripMenuItem;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel panel3;
     }
 }

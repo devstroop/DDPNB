@@ -59,6 +59,12 @@
     <Compile Include="Forms\FrmAdmin.Designer.cs">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmConfiguration.Designer.cs">
+      <DependentUpon>FrmConfiguration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmDeveloper.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cube_x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Jobs\" />
+    <Folder Include="Forms\Microservices\" />
+    <Folder Include="Forms\Transactions\" />
+    <Folder Include="Forms\Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cogwheel_x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

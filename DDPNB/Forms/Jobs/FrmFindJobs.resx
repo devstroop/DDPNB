@@ -117,44 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="question_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\question_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wrench_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wrench_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="warning_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\warning_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="accept_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\accept_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="suitcase_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\suitcase_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="switch_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\switch_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cash_flow_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cash_flow_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="info_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cube_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cube_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shutdown_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shutdown_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cogwheel_x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cogwheel_x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
