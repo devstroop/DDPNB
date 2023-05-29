@@ -65,12 +65,6 @@
     <Compile Include="Forms\FrmConfiguration.Designer.cs">
       <DependentUpon>FrmConfiguration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmDeveloper.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmDeveloper.Designer.cs">
-      <DependentUpon>FrmDeveloper.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +130,102 @@
     </Compile>
     <Compile Include="Forms\Microservices\FrmSuspendActivateMicroservice.Designer.cs">
       <DependentUpon>FrmSuspendActivateMicroservice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmAllTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmAllTransactions.Designer.cs">
+      <DependentUpon>FrmAllTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmDeleteTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmDeleteTransaction.Designer.cs">
+      <DependentUpon>FrmDeleteTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmFindTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmFindTransactions.Designer.cs">
+      <DependentUpon>FrmFindTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmModifyTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmModifyTransaction.Designer.cs">
+      <DependentUpon>FrmModifyTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmNewTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmNewTransaction.Designer.cs">
+      <DependentUpon>FrmNewTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmSuspendActivateTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transactions\FrmSuspendActivateTransaction.Designer.cs">
+      <DependentUpon>FrmSuspendActivateTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\FrmAllUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmAllUsers.Designer.cs">
+      <DependentUpon>FrmAllUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\FrmDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmDeleteUser.Designer.cs">
+      <DependentUpon>FrmDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\FrmFindUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmFindUsers.Designer.cs">
+      <DependentUpon>FrmFindUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\FrmModifyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmModifyUser.Designer.cs">
+      <DependentUpon>FrmModifyUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\FrmNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmNewUser.Designer.cs">
+      <DependentUpon>FrmNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\FrmSuspentActivateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmSuspentActivateUser.Designer.cs">
+      <DependentUpon>FrmSuspentActivateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utility\FrmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utility\FrmBackup.Designer.cs">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utility\FrmExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utility\FrmExport.Designer.cs">
+      <DependentUpon>FrmExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utility\FrmImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utility\FrmImport.Designer.cs">
+      <DependentUpon>FrmImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utility\FrmRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utility\FrmRestore.Designer.cs">
+      <DependentUpon>FrmRestore.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -213,10 +303,7 @@
   <ItemGroup>
     <None Include="Resources\cube_x16.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\Transactions\" />
-    <Folder Include="Forms\Users\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\cogwheel_x16.png" />
   </ItemGroup>

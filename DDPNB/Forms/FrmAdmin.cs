@@ -26,10 +26,13 @@ namespace DDPNB.Forms
             }
             if (DDPNB.Common.User != null)
             {
-                this.usersToolStripMenuItem.Visible = true;
-                this.jobsToolStripMenuItem.Visible = true;
-                this.transactionsToolStripMenuItem.Visible = true;
-                this.microservicesToolStripMenuItem.Visible = true;
+                this.jobsToolStripMenuItem.Enabled = true;
+                this.transactionsToolStripMenuItem.Enabled = true;
+                this.microservicesToolStripMenuItem.Enabled = true;
+                this.usersToolStripMenuItem.Enabled = true;
+                this.utilityToolStripMenuItem.Enabled = true;
+                this.configurationToolStripMenuItem.Enabled = true;
+                this.flowPanelShortcuts.Enabled = true;
 
                 this.loginToolStripMenuItem.Visible = false;
                 this.profileToolStripMenuItem.Visible = true;
@@ -40,10 +43,13 @@ namespace DDPNB.Forms
             }
             else
             {
-                this.usersToolStripMenuItem.Visible = false;
-                this.jobsToolStripMenuItem.Visible = false;
-                this.transactionsToolStripMenuItem.Visible = false;
-                this.microservicesToolStripMenuItem.Visible = false;
+                this.jobsToolStripMenuItem.Enabled = false;
+                this.transactionsToolStripMenuItem.Enabled = false;
+                this.microservicesToolStripMenuItem.Enabled = false;
+                this.usersToolStripMenuItem.Enabled = false;
+                this.utilityToolStripMenuItem.Enabled = false;
+                this.configurationToolStripMenuItem.Enabled = false;
+                this.flowPanelShortcuts.Enabled = false;
 
                 this.loginToolStripMenuItem.Visible = true;
                 this.profileToolStripMenuItem.Visible = false;
@@ -75,7 +81,7 @@ namespace DDPNB.Forms
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frmLogin = new DDPNB.Forms.FrmLogin();
+            var frmLogin = new DDPNB.Forms.FrmLogin() ;
             frmLogin.ShowDialog();
             if (Common.User != null)
             {
@@ -88,24 +94,230 @@ namespace DDPNB.Forms
             FrmAdmin_Load(sender, e);
         }
 
-        private void developerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            (new FrmDeveloper()).ShowDialog();
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            (new FrmAbout()).ShowDialog();
-        }
-
-        private void releaseNoteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            (new FrmReleaseNote()).ShowDialog();
-        }
-
         private void configurationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            (new FrmConfiguration()).ShowDialog();
+            (new FrmConfiguration(){ MdiParent = this }).Show();
+        }
+
+        private void newJobToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Jobs.FrmNewJob(){ MdiParent = this }).Show();
+        }
+
+        private void modifyJobToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Jobs.FrmModifyJob(){ MdiParent = this }).Show();
+        }
+
+        private void deleteJobToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Jobs.FrmDeleteJob(){ MdiParent = this }).Show();
+        }
+
+        private void suspendJobToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Jobs.FrmSuspendActivateJob(){ MdiParent = this }).Show();
+        }
+
+        private void findJobsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Jobs.FrmFindJobs(){ MdiParent = this }).Show();
+        }
+
+        private void allJobsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Jobs.FrmAllJobs(){ MdiParent = this }).Show();
+        }
+
+        private void newTransactionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Transactions.FrmNewTransaction(){ MdiParent = this }).Show();
+        }
+
+        private void modifyTransactionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Transactions.FrmModifyTransaction(){ MdiParent = this }).Show();
+        }
+
+        private void deleteTransactionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Transactions.FrmDeleteTransaction(){ MdiParent = this }).Show();
+        }
+
+        private void suspendTransactionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Transactions.FrmSuspendActivateTransaction(){ MdiParent = this }).Show();
+        }
+
+        private void findTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Transactions.FrmFindTransactions(){ MdiParent = this }).Show();
+        }
+
+        private void allTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Transactions.FrmAllTransactions(){ MdiParent = this }).Show();
+        }
+
+        private void suspendMicroservicesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Microservices.FrmSuspendActivateMicroservice(){ MdiParent = this }).Show();
+        }
+
+        private void findMicroservicesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Microservices.FrmFindMicroservices(){ MdiParent = this }).Show();
+        }
+
+        private void allMicroservicesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Microservices.FrmAllMicroservices(){ MdiParent = this }).Show();
+        }
+
+        private void newUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmNewUser(){ MdiParent = this }).Show();
+        }
+
+        private void modifyUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmModifyUser(){ MdiParent = this }).Show();
+        }
+
+        private void deleteUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmDeleteUser(){ MdiParent = this }).Show();
+        }
+
+        private void suspendUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmSuspentActivateUser(){ MdiParent = this }).Show();
+        }
+
+        private void findUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmFindUsers(){ MdiParent = this }).Show();
+        }
+
+        private void allUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmAllUsers(){ MdiParent = this }).Show();
+        }
+
+        private void importJobsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmImport(){ MdiParent = this }).Show();
+        }
+
+        private void importTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmImport(){ MdiParent = this }).Show();
+        }
+
+        private void importMicroservicesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmImport(){ MdiParent = this }).Show();
+        }
+
+        private void importUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmImport(){ MdiParent = this }).Show();
+        }
+
+        private void importAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmImport(){ MdiParent = this }).Show();
+        }
+
+        private void exportJobsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmExport(){ MdiParent = this }).Show();
+        }
+
+        private void exportTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmExport(){ MdiParent = this }).Show();
+        }
+
+        private void exportMicroservicesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmExport(){ MdiParent = this }).Show();
+        }
+
+        private void exportUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmExport(){ MdiParent = this }).Show();
+        }
+
+        private void exportAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmExport(){ MdiParent = this }).Show();
+        }
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmBackup(){ MdiParent = this }).Show();
+        }
+
+        private void restoreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Utility.FrmRestore(){ MdiParent = this }).Show();
+        }
+
+        private void tsBtnRunningAt_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(tsBtnRunningAt.Text);
+            MessageBox.Show("Copied to clipboard.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnF1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnF2_Click(object sender, EventArgs e)
+        {
+            (new Jobs.FrmNewJob() { MdiParent = this }).Show();
+        }
+
+        private void btnF3_Click(object sender, EventArgs e)
+        {
+            (new Transactions.FrmNewTransaction() { MdiParent = this }).Show();
+        }
+
+        private void btnF4_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmNewUser() { MdiParent = this }).Show();
+        }
+
+        private void btnF5_Click(object sender, EventArgs e)
+        {
+            (new Jobs.FrmAllJobs() { MdiParent = this }).Show();
+        }
+
+        private void btnF6_Click(object sender, EventArgs e)
+        {
+            (new Transactions.FrmAllTransactions() { MdiParent = this }).Show();
+        }
+
+        private void btnF7_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmAllUsers() { MdiParent = this }).Show();
+        }
+
+        private void btnF8_Click(object sender, EventArgs e)
+        {
+            (new Microservices.FrmAllMicroservices() { MdiParent = this }).Show();
+        }
+
+        private void tsBtnAbout_Click(object sender, EventArgs e)
+        {
+            (new FrmAbout() { MdiParent = this }).Show();
+        }
+
+        private void tsBtnReleaseNote_Click(object sender, EventArgs e)
+        {
+            (new FrmReleaseNote() { MdiParent = this }).Show();
         }
     }
 }

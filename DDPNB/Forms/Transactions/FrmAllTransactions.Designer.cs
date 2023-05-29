@@ -1,6 +1,6 @@
-﻿namespace DDPNB.Forms
+﻿namespace DDPNB.Forms.Transactions
 {
-    partial class FrmDeveloper
+    partial class FrmAllTransactions
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmDeveloper";
+            this.Text = "FrmAllTransactions";
         }
 
         #endregion

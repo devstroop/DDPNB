@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDPNB.Forms
+namespace DDPNB.Forms.Transactions
 {
-    public partial class FrmDeveloper : Form
+    public partial class FrmModifyTransaction : Form
     {
-        public FrmDeveloper()
+        public FrmModifyTransaction()
         {
             InitializeComponent();
         }
