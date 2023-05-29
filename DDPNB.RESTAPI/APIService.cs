@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDPNB
+namespace DDPNB.ClientAPI
 {
-    public class RESTAPI
+    public class APIService
     {
         private string status;
         public void Start()

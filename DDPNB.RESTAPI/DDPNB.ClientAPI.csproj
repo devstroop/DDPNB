@@ -7,8 +7,8 @@
     <ProjectGuid>{028258B3-E3CC-46AD-A264-F46493A78D72}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DDPNB</RootNamespace>
-    <AssemblyName>DDPNB.RESTAPI</AssemblyName>
+    <RootNamespace>DDPNB.ClientAPI</RootNamespace>
+    <AssemblyName>DDPNB.ClientAPI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RESTAPI.cs" />
+    <Compile Include="APIService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routes\UserRoute.cs" />
   </ItemGroup>

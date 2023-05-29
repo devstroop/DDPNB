@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDPNB.Routes
+namespace DDPNB.ClientAPI.Routes
 {
     public class UserRoute : NancyModule
     {
