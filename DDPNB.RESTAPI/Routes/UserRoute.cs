@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace DDPNB.Routes
 {
-    public class AuthenticationRoute : NancyModule
+    public class UserRoute : NancyModule
     {
         DataClassesDataContext data = new DataClassesDataContext();
-        public AuthenticationRoute() : base("/API/Authentication")
+        public UserRoute() : base("/API/User")
         {
             Post("/Login", async args =>
             {
@@ -37,11 +37,12 @@ namespace DDPNB.Routes
                     }
                     User user = users.First();
 
-                    // If per user only one session
-                    // Add configuration
-                    foreach (Data.Session existingSession in data.Sessions.Where(elem => elem.UserId == user.Id))
+                    if(!user.MultiSession)
                     {
-                        data.Sessions.DeleteOnSubmit(existingSession);
+                        foreach (Data.Session existingSession in data.Sessions.Where(elem => elem.UserId == user.Id))
+                        {
+                            data.Sessions.DeleteOnSubmit(existingSession);
+                        }
                     }
 
                     var SessionId = Guid.NewGuid().ToString();
@@ -51,7 +52,7 @@ namespace DDPNB.Routes
                             SessionId = SessionId,
                             UserId = user.Id,
                             CreatedAt = DateTime.Now,
-                            ExpiresAt = DateTime.Now.AddMilliseconds(6000), // set 6000 dynamically from configuration
+                            ExpiresAt = DateTime.Now.AddMilliseconds(DDPNB.Common.Expiry), // set 6000 dynamically from configuration
                         });
                     data.SubmitChanges();
                     return JsonConvert.SerializeObject(new Dictionary<string, dynamic>

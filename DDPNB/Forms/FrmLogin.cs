@@ -15,6 +15,7 @@ namespace DDPNB.Forms
     {
 
         string host;
+        int expiry;
         public User user { get; set; }
         public FrmLogin(string host)
         {
@@ -46,7 +47,28 @@ namespace DDPNB.Forms
                 MessageBox.Show("Invalida password.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            this.user = users.First();
+
+            var user = users.First();
+
+            if (!user.MultiSession)
+            {
+                foreach (Data.Session existingSession in data.Sessions.Where(elem => elem.UserId == user.Id))
+                {
+                    data.Sessions.DeleteOnSubmit(existingSession);
+                }
+            }
+
+            var SessionId = Guid.NewGuid().ToString();
+            data.Sessions.InsertOnSubmit(
+                new Data.Session()
+                {
+                    SessionId = SessionId,
+                    UserId = user.Id,
+                    CreatedAt = DateTime.Now,
+                    ExpiresAt = DateTime.Now.AddMilliseconds(DDPNB.Common.Expiry),
+                });
+            data.SubmitChanges();
+            this.user = user;
             this.Close();
         }
 

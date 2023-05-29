@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAdmin.cs">
+    <Compile Include="Forms\FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAdmin.Designer.cs">
+    <Compile Include="Forms\FrmAdmin.Designer.cs">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAdmin.resx">
+    <EmbeddedResource Include="Forms\FrmAdmin.resx">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,10 +93,6 @@
     <ProjectReference Include="..\DDPNB.Common\DDPNB.Common.csproj">
       <Project>{9eeae2a9-0adc-48f0-9413-77d163a35dde}</Project>
       <Name>DDPNB.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DDPNB.RESTAPI\DDPNB.RESTAPI.csproj">
-      <Project>{028258b3-e3cc-46ad-a264-f46493a78d72}</Project>
-      <Name>DDPNB.RESTAPI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,6 +9,7 @@ namespace DDPNB
 {
     public class Common
     {
+        public static int Expiry = 6000; // In Milliseconds
         public static User LoggedInUser { get; set; }
         public static User Login(string host)
         {
