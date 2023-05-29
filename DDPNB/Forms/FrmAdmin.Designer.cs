@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.menuStripTop = new System.Windows.Forms.MenuStrip();
+            this.toolStripFooter = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,16 +98,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.menuStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.menuStripTop.SuspendLayout();
+            this.toolStripFooter.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStripTop
             // 
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStripTop.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStripTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jobsToolStripMenuItem,
             this.transactionsToolStripMenuItem1,
             this.microservicesToolStripMenuItem,
@@ -118,25 +118,25 @@
             this.loginToolStripMenuItem,
             this.utilityToolStripMenuItem,
             this.configurationToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(925, 25);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStripTop.Location = new System.Drawing.Point(0, 0);
+            this.menuStripTop.Name = "menuStripTop";
+            this.menuStripTop.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStripTop.Size = new System.Drawing.Size(1002, 25);
+            this.menuStripTop.TabIndex = 0;
+            this.menuStripTop.Text = "menuStrip1";
             // 
-            // toolStrip1
+            // toolStripFooter
             // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStripFooter.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripLabel1,
             this.toolStripLabel2});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 536);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(925, 25);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
+            this.toolStripFooter.Location = new System.Drawing.Point(0, 536);
+            this.toolStripFooter.Name = "toolStripFooter";
+            this.toolStripFooter.Size = new System.Drawing.Size(1002, 25);
+            this.toolStripFooter.TabIndex = 2;
+            this.toolStripFooter.Text = "toolStrip1";
             // 
             // toolStripLabel1
             // 
@@ -183,36 +183,36 @@
             // newJobToolStripMenuItem
             // 
             this.newJobToolStripMenuItem.Name = "newJobToolStripMenuItem";
-            this.newJobToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.newJobToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newJobToolStripMenuItem.Text = "New Job";
             // 
             // modifyJobToolStripMenuItem
             // 
             this.modifyJobToolStripMenuItem.Name = "modifyJobToolStripMenuItem";
-            this.modifyJobToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.modifyJobToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modifyJobToolStripMenuItem.Text = "Modify Job";
             // 
             // deleteJobToolStripMenuItem
             // 
             this.deleteJobToolStripMenuItem.Name = "deleteJobToolStripMenuItem";
-            this.deleteJobToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.deleteJobToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deleteJobToolStripMenuItem.Text = "Delete Job";
             // 
             // suspendJobToolStripMenuItem
             // 
             this.suspendJobToolStripMenuItem.Name = "suspendJobToolStripMenuItem";
-            this.suspendJobToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.suspendJobToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.suspendJobToolStripMenuItem.Text = "Suspend Job";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // allJobsToolStripMenuItem
             // 
             this.allJobsToolStripMenuItem.Name = "allJobsToolStripMenuItem";
-            this.allJobsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.allJobsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.allJobsToolStripMenuItem.Text = "All Jobs";
             // 
             // transactionsToolStripMenuItem1
@@ -309,36 +309,36 @@
             // newUserToolStripMenuItem
             // 
             this.newUserToolStripMenuItem.Name = "newUserToolStripMenuItem";
-            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newUserToolStripMenuItem.Text = "New User";
             // 
             // modifyUserToolStripMenuItem
             // 
             this.modifyUserToolStripMenuItem.Name = "modifyUserToolStripMenuItem";
-            this.modifyUserToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.modifyUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modifyUserToolStripMenuItem.Text = "Modify User";
             // 
             // deleteUserToolStripMenuItem
             // 
             this.deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
-            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deleteUserToolStripMenuItem.Text = "Delete User";
             // 
             // suspendUserToolStripMenuItem
             // 
             this.suspendUserToolStripMenuItem.Name = "suspendUserToolStripMenuItem";
-            this.suspendUserToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.suspendUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.suspendUserToolStripMenuItem.Text = "Suspend User";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(156, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // allUsersToolStripMenuItem
             // 
             this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";
-            this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.allUsersToolStripMenuItem.Text = "All Users";
             // 
             // helpToolStripMenuItem
@@ -356,21 +356,21 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // developerToolStripMenuItem
             // 
             this.developerToolStripMenuItem.Name = "developerToolStripMenuItem";
-            this.developerToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.developerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.developerToolStripMenuItem.Text = "Developer";
             this.developerToolStripMenuItem.Click += new System.EventHandler(this.developerToolStripMenuItem_Click);
             // 
             // releaseNoteToolStripMenuItem
             // 
             this.releaseNoteToolStripMenuItem.Name = "releaseNoteToolStripMenuItem";
-            this.releaseNoteToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.releaseNoteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.releaseNoteToolStripMenuItem.Text = "Release Note";
             this.releaseNoteToolStripMenuItem.Click += new System.EventHandler(this.releaseNoteToolStripMenuItem_Click);
             // 
@@ -549,7 +549,7 @@
             this.flowLayoutPanel1.Controls.Add(this.button8);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(788, 25);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(865, 25);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(137, 511);
             this.flowLayoutPanel1.TabIndex = 4;
@@ -679,21 +679,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 561);
+            this.ClientSize = new System.Drawing.Size(1002, 561);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.toolStripFooter);
+            this.Controls.Add(this.menuStripTop);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStripTop;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAdmin";
             this.Text = "DD PNB Admin";
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.menuStripTop.ResumeLayout(false);
+            this.menuStripTop.PerformLayout();
+            this.toolStripFooter.ResumeLayout(false);
+            this.toolStripFooter.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -704,7 +704,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStripTop;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
@@ -727,7 +727,7 @@
         private System.Windows.Forms.ToolStripMenuItem developerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem releaseNoteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transactionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip toolStripFooter;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
