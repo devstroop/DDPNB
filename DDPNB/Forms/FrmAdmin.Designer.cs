@@ -80,6 +80,7 @@
             this.restoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripFooter = new System.Windows.Forms.ToolStrip();
+            this.tsBtnReleaseNote = new System.Windows.Forms.ToolStripButton();
             this.tsBtnAbout = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -99,7 +100,9 @@
             this.btnF7 = new System.Windows.Forms.Button();
             this.btnF8 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tsBtnReleaseNote = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.userRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userPermissionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripTop.SuspendLayout();
             this.toolStripFooter.SuspendLayout();
             this.flowPanelShortcuts.SuspendLayout();
@@ -112,8 +115,8 @@
             this.menuStripTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jobsToolStripMenuItem,
             this.transactionsToolStripMenuItem,
-            this.microservicesToolStripMenuItem,
             this.usersToolStripMenuItem,
+            this.microservicesToolStripMenuItem,
             this.logoutToolStripMenuItem,
             this.profileToolStripMenuItem,
             this.loginToolStripMenuItem,
@@ -144,6 +147,8 @@
             // newJobToolStripMenuItem
             // 
             this.newJobToolStripMenuItem.Name = "newJobToolStripMenuItem";
+            this.newJobToolStripMenuItem.ShortcutKeyDisplayString = "F2";
+            this.newJobToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
             this.newJobToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.newJobToolStripMenuItem.Text = "New Job";
             this.newJobToolStripMenuItem.Click += new System.EventHandler(this.newJobToolStripMenuItem_Click);
@@ -184,6 +189,8 @@
             // allJobsToolStripMenuItem
             // 
             this.allJobsToolStripMenuItem.Name = "allJobsToolStripMenuItem";
+            this.allJobsToolStripMenuItem.ShortcutKeyDisplayString = "F5";
+            this.allJobsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
             this.allJobsToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.allJobsToolStripMenuItem.Text = "All Jobs";
             this.allJobsToolStripMenuItem.Click += new System.EventHandler(this.allJobsToolStripMenuItem_Click);
@@ -206,6 +213,8 @@
             // newTransactionToolStripMenuItem
             // 
             this.newTransactionToolStripMenuItem.Name = "newTransactionToolStripMenuItem";
+            this.newTransactionToolStripMenuItem.ShortcutKeyDisplayString = "F3";
+            this.newTransactionToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
             this.newTransactionToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.newTransactionToolStripMenuItem.Text = "New Transaction";
             this.newTransactionToolStripMenuItem.Click += new System.EventHandler(this.newTransactionToolStripMenuItem_Click);
@@ -246,6 +255,8 @@
             // allTransactionsToolStripMenuItem
             // 
             this.allTransactionsToolStripMenuItem.Name = "allTransactionsToolStripMenuItem";
+            this.allTransactionsToolStripMenuItem.ShortcutKeyDisplayString = "F6";
+            this.allTransactionsToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F6;
             this.allTransactionsToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.allTransactionsToolStripMenuItem.Text = "All Transactions";
             this.allTransactionsToolStripMenuItem.Click += new System.EventHandler(this.allTransactionsToolStripMenuItem_Click);
@@ -284,6 +295,8 @@
             // allMicroservicesToolStripMenuItem
             // 
             this.allMicroservicesToolStripMenuItem.Name = "allMicroservicesToolStripMenuItem";
+            this.allMicroservicesToolStripMenuItem.ShortcutKeyDisplayString = "F8";
+            this.allMicroservicesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F8;
             this.allMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
             this.allMicroservicesToolStripMenuItem.Text = "All Microservices";
             this.allMicroservicesToolStripMenuItem.Click += new System.EventHandler(this.allMicroservicesToolStripMenuItem_Click);
@@ -297,7 +310,10 @@
             this.suspendUserToolStripMenuItem,
             this.toolStripSeparator1,
             this.findUsersToolStripMenuItem,
-            this.allUsersToolStripMenuItem});
+            this.allUsersToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.userRolesToolStripMenuItem,
+            this.userPermissionsToolStripMenuItem});
             this.usersToolStripMenuItem.Image = global::DDPNB.Properties.Resources.user_x16;
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(69, 21);
@@ -306,6 +322,8 @@
             // newUserToolStripMenuItem
             // 
             this.newUserToolStripMenuItem.Name = "newUserToolStripMenuItem";
+            this.newUserToolStripMenuItem.ShortcutKeyDisplayString = "F4";
+            this.newUserToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F4;
             this.newUserToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.newUserToolStripMenuItem.Text = "New User";
             this.newUserToolStripMenuItem.Click += new System.EventHandler(this.newUserToolStripMenuItem_Click);
@@ -346,6 +364,8 @@
             // allUsersToolStripMenuItem
             // 
             this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";
+            this.allUsersToolStripMenuItem.ShortcutKeyDisplayString = "F7";
+            this.allUsersToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F7;
             this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.allUsersToolStripMenuItem.Text = "All Users";
             this.allUsersToolStripMenuItem.Click += new System.EventHandler(this.allUsersToolStripMenuItem_Click);
@@ -400,7 +420,7 @@
             this.exportUsersToolStripMenuItem,
             this.exportAllToolStripMenuItem});
             this.importExportToolStripMenuItem.Name = "importExportToolStripMenuItem";
-            this.importExportToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.importExportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.importExportToolStripMenuItem.Text = "Import/Export";
             // 
             // importJobsToolStripMenuItem
@@ -484,7 +504,7 @@
             this.backupToolStripMenuItem,
             this.restoreToolStripMenuItem});
             this.backupRestoreToolStripMenuItem.Name = "backupRestoreToolStripMenuItem";
-            this.backupRestoreToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.backupRestoreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.backupRestoreToolStripMenuItem.Text = "Backup/Restore";
             // 
             // backupToolStripMenuItem
@@ -523,6 +543,17 @@
             this.toolStripFooter.Size = new System.Drawing.Size(1002, 25);
             this.toolStripFooter.TabIndex = 2;
             this.toolStripFooter.Text = "toolStrip1";
+            // 
+            // tsBtnReleaseNote
+            // 
+            this.tsBtnReleaseNote.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsBtnReleaseNote.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsBtnReleaseNote.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReleaseNote.Image")));
+            this.tsBtnReleaseNote.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBtnReleaseNote.Name = "tsBtnReleaseNote";
+            this.tsBtnReleaseNote.Size = new System.Drawing.Size(77, 22);
+            this.tsBtnReleaseNote.Text = "Release note";
+            this.tsBtnReleaseNote.Click += new System.EventHandler(this.tsBtnReleaseNote_Click);
             // 
             // tsBtnAbout
             // 
@@ -718,16 +749,22 @@
             this.panel3.Size = new System.Drawing.Size(134, 27);
             this.panel3.TabIndex = 10;
             // 
-            // tsBtnReleaseNote
+            // toolStripSeparator6
             // 
-            this.tsBtnReleaseNote.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsBtnReleaseNote.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsBtnReleaseNote.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReleaseNote.Image")));
-            this.tsBtnReleaseNote.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsBtnReleaseNote.Name = "tsBtnReleaseNote";
-            this.tsBtnReleaseNote.Size = new System.Drawing.Size(77, 22);
-            this.tsBtnReleaseNote.Text = "Release note";
-            this.tsBtnReleaseNote.Click += new System.EventHandler(this.tsBtnReleaseNote_Click);
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(210, 6);
+            // 
+            // userRolesToolStripMenuItem
+            // 
+            this.userRolesToolStripMenuItem.Name = "userRolesToolStripMenuItem";
+            this.userRolesToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.userRolesToolStripMenuItem.Text = "User Roles";
+            // 
+            // userPermissionsToolStripMenuItem
+            // 
+            this.userPermissionsToolStripMenuItem.Name = "userPermissionsToolStripMenuItem";
+            this.userPermissionsToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.userPermissionsToolStripMenuItem.Text = "User Permissions";
             // 
             // FrmAdmin
             // 
@@ -742,7 +779,7 @@
             this.MainMenuStrip = this.menuStripTop;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAdmin";
-            this.Text = "DD PNB [Admin]";
+            this.Text = "DD PNB [Admin] [BETA]";
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.menuStripTop.ResumeLayout(false);
             this.menuStripTop.PerformLayout();
@@ -829,5 +866,8 @@
         private System.Windows.Forms.ToolStripMenuItem findUsersToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton tsBtnRunningAt;
         private System.Windows.Forms.ToolStripButton tsBtnReleaseNote;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem userRolesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem userPermissionsToolStripMenuItem;
     }
 }

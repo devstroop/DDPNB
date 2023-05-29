@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace DDPNB.Forms.Users
 {
-    public partial class FrmNewUser : Form
+    public partial class FrmUserPermissions : Form
     {
-        public FrmNewUser()
+        public FrmUserPermissions()
         {
             InitializeComponent();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

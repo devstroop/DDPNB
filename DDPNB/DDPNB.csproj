@@ -203,6 +203,18 @@
     <Compile Include="Forms\Users\FrmSuspentActivateUser.Designer.cs">
       <DependentUpon>FrmSuspentActivateUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Users\FrmUserPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmUserPermissions.Designer.cs">
+      <DependentUpon>FrmUserPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\FrmUserRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\FrmUserRoles.Designer.cs">
+      <DependentUpon>FrmUserRoles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Utility\FrmBackup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,6 +318,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\FrmSuspentActivateUser.resx">
       <DependentUpon>FrmSuspentActivateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\FrmUserPermissions.resx">
+      <DependentUpon>FrmUserPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users\FrmUserRoles.resx">
+      <DependentUpon>FrmUserRoles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Utility\FrmBackup.resx">
       <DependentUpon>FrmBackup.cs</DependentUpon>
