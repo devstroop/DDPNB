@@ -13,13 +13,8 @@ namespace DDPNB.Forms
 {
     public partial class FrmLogin : Form
     {
-
-        string host;
-        int expiry;
-        public User user { get; set; }
-        public FrmLogin(string host)
+        public FrmLogin()
         {
-            this.host = host;
             InitializeComponent();
         }
 
@@ -30,51 +25,58 @@ namespace DDPNB.Forms
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string email = this.tBoxEmail.Text;
-            string password = this.tBoxPassword.Text;
-            string host = this.host;
-
-            // Dont use native calls, prefer api
-            DataClassesDataContext data = new DataClassesDataContext();
-            var users = data.Users.Where(elem => elem.Email.Trim() == email).ToList();
-            if(users.Count() == 0)
+            try
             {
-                MessageBox.Show("Invalida email.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            if(users.First().Password.Trim() != password.Trim())
-            {
-                MessageBox.Show("Invalida password.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+                string email = this.tBoxEmail.Text;
+                string password = this.tBoxPassword.Text;
 
-            var user = users.First();
-
-            if (!user.MultiSession)
-            {
-                foreach (Data.Session existingSession in data.Sessions.Where(elem => elem.UserId == user.Id))
+                DataClassesDataContext data = new DataClassesDataContext();
+                var users = data.Users.Where(elem => elem.Email.Trim() == email).ToList();
+                if (users.Count() == 0)
                 {
-                    data.Sessions.DeleteOnSubmit(existingSession);
+                    MessageBox.Show("Invalid email.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
-            }
-
-            var SessionId = Guid.NewGuid().ToString();
-            data.Sessions.InsertOnSubmit(
-                new Data.Session()
+                if (users.First().Password.Trim() != password.Trim())
                 {
-                    SessionId = SessionId,
-                    UserId = user.Id,
-                    CreatedAt = DateTime.Now,
-                    ExpiresAt = DateTime.Now.AddMilliseconds(DDPNB.Common.Expiry),
-                });
-            data.SubmitChanges();
-            this.user = user;
-            this.Close();
+                    MessageBox.Show("Invalid password.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var user = users.First();
+
+                if (!user.MultiSession)
+                {
+                    foreach (Data.Session existingSession in data.Sessions.Where(elem => elem.UserId == user.Id))
+                    {
+                        data.Sessions.DeleteOnSubmit(existingSession);
+                    }
+                }
+
+                var SessionId = Guid.NewGuid().ToString();
+                data.Sessions.InsertOnSubmit(
+                    new Session()
+                    {
+                        SessionId = SessionId,
+                        UserId = user.Id,
+                        CreatedAt = DateTime.Now,
+                        ExpiresAt = DateTime.Now.AddMilliseconds(DDPNB.Common.Expiry),
+                    });
+
+                data.SubmitChanges();
+                Common.LoggedInUser = user;
+                this.Close();
+            }
+            catch(Exception ex)
+            {
+                Common.LoggedInUser = null;
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
