@@ -13,16 +13,6 @@ namespace DDPNB.Forms
 {
     public partial class FrmLogin : Form
     {
-        public static User Login(string host)
-        {
-            var frmLogin = new FrmLogin(host: host);
-            frmLogin.ShowDialog();
-            return frmLogin.user;
-        }
-        public static void Logout(string userId)
-        {
-
-        }
 
         string host;
         public User user { get; set; }
@@ -43,11 +33,26 @@ namespace DDPNB.Forms
             string password = this.tBoxPassword.Text;
             string host = this.host;
 
-            this.user = new User
+            // Dont use native calls, prefer api
+            DataClassesDataContext data = new DataClassesDataContext();
+            var users = data.Users.Where(elem => elem.Email.Trim() == email).ToList();
+            if(users.Count() == 0)
             {
-                Email = email,
-            };
+                MessageBox.Show("Invalida email.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if(users.First().Password.Trim() != password.Trim())
+            {
+                MessageBox.Show("Invalida password.", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            this.user = users.First();
             this.Close();
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
