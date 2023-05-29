@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DDPNB.Forms.Jobs
 {
-    public partial class FrmSuspendJob : Form
+    public partial class FrmSuspendActivateJob : Form
     {
-        public FrmSuspendJob()
+        public FrmSuspendActivateJob()
         {
             InitializeComponent();
         }

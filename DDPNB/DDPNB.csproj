@@ -83,6 +83,60 @@
     <Compile Include="Forms\FrmReleaseNote.Designer.cs">
       <DependentUpon>FrmReleaseNote.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Jobs\FrmAllJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmAllJobs.Designer.cs">
+      <DependentUpon>FrmAllJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmDeleteJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmDeleteJob.Designer.cs">
+      <DependentUpon>FrmDeleteJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmFindJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmFindJobs.Designer.cs">
+      <DependentUpon>FrmFindJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmModifyJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmModifyJob.Designer.cs">
+      <DependentUpon>FrmModifyJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmNewJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmNewJob.Designer.cs">
+      <DependentUpon>FrmNewJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmSuspendActivateJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jobs\FrmSuspendActivateJob.Designer.cs">
+      <DependentUpon>FrmSuspendActivateJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Microservices\FrmAllMicroservices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Microservices\FrmAllMicroservices.Designer.cs">
+      <DependentUpon>FrmAllMicroservices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Microservices\FrmFindMicroservices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Microservices\FrmFindMicroservices.Designer.cs">
+      <DependentUpon>FrmFindMicroservices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Microservices\FrmSuspendActivateMicroservice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Microservices\FrmSuspendActivateMicroservice.Designer.cs">
+      <DependentUpon>FrmSuspendActivateMicroservice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FrmAdmin.resx">
@@ -90,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jobs\FrmFindJobs.resx">
+      <DependentUpon>FrmFindJobs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -157,8 +214,6 @@
     <None Include="Resources\cube_x16.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\Jobs\" />
-    <Folder Include="Forms\Microservices\" />
     <Folder Include="Forms\Transactions\" />
     <Folder Include="Forms\Users\" />
   </ItemGroup>

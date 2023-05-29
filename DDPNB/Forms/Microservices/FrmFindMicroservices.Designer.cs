@@ -1,6 +1,6 @@
-﻿namespace DDPNB.Forms.Jobs
+﻿namespace DDPNB.Forms.Microservices
 {
-    partial class FrmSuspendJob
+    partial class FrmFindMicroservices
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmSuspendJob";
+            this.Text = "FrmFindMicroservices";
         }
 
         #endregion
