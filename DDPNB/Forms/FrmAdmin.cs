@@ -19,17 +19,23 @@ namespace DDPNB.Forms
 
         private void FrmAdmin_Load(object sender, EventArgs e)
         {
-            if (DDPNB.Common.LoggedInUser != null)
+            DDPNB.Data.DataClassesDataContext data = new Data.DataClassesDataContext();
+            if (data.Users.Count() == 0) 
+            {
+                InitialSetup();
+            }
+            if (DDPNB.Common.User != null)
             {
                 this.usersToolStripMenuItem.Visible = true;
                 this.jobsToolStripMenuItem.Visible = true;
                 this.transactionsToolStripMenuItem.Visible = true;
+                this.microservicesToolStripMenuItem.Visible = true;
 
                 this.loginToolStripMenuItem.Visible = false;
                 this.profileToolStripMenuItem.Visible = true;
                 this.logoutToolStripMenuItem.Visible = true;
 
-                this.profileToolStripMenuItem.Text = $"{Common.LoggedInUser.Email.Trim()}";
+                this.profileToolStripMenuItem.Text = $"{Common.User.Email.Trim()}";
                 this.profileToolStripMenuItem.Image = global::DDPNB.Properties.Resources.accept_x16;
             }
             else
@@ -37,6 +43,7 @@ namespace DDPNB.Forms
                 this.usersToolStripMenuItem.Visible = false;
                 this.jobsToolStripMenuItem.Visible = false;
                 this.transactionsToolStripMenuItem.Visible = false;
+                this.microservicesToolStripMenuItem.Visible = false;
 
                 this.loginToolStripMenuItem.Visible = true;
                 this.profileToolStripMenuItem.Visible = false;
@@ -47,17 +54,36 @@ namespace DDPNB.Forms
             }
         }
 
-        private void loginToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void InitialSetup()
+        {
+            DialogResult result = MessageBox.Show("Do you want to proceed initial setup?", "Important", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                try
+                {
+                    // Show New User Form
+                    // Create User
+                    // Assign Admin
+                    MessageBox.Show("Initial setup completed successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch(Exception exc)
+                {
+                    MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmLogin = new DDPNB.Forms.FrmLogin();
             frmLogin.ShowDialog();
-            if (Common.LoggedInUser != null)
+            if (Common.User != null)
             {
-                MessageBox.Show($"Success ({Common.LoggedInUser.Email.Trim()})");
+                MessageBox.Show($"Success ({Common.User.Email.Trim()})", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show($"Failed");
+                MessageBox.Show($"Login failed", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             FrmAdmin_Load(sender, e);
         }
@@ -76,5 +102,6 @@ namespace DDPNB.Forms
         {
             (new FrmReleaseNote()).ShowDialog();
         }
+
     }
 }

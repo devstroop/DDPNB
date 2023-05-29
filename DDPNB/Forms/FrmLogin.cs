@@ -27,6 +27,12 @@ namespace DDPNB.Forms
         {
             try
             {
+                if(Common.Session != null)
+                {
+                    MessageBox.Show("Already logged in.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 string email = this.tBoxEmail.Text;
                 string password = this.tBoxPassword.Text;
 
@@ -45,31 +51,22 @@ namespace DDPNB.Forms
 
                 var user = users.First();
 
-                if (!user.MultiSession)
-                {
-                    foreach (Data.Session existingSession in data.Sessions.Where(elem => elem.UserId == user.Id))
-                    {
-                        data.Sessions.DeleteOnSubmit(existingSession);
-                    }
-                }
+                
 
                 var SessionId = Guid.NewGuid().ToString();
-                data.Sessions.InsertOnSubmit(
-                    new Session()
-                    {
-                        SessionId = SessionId,
-                        UserId = user.Id,
-                        CreatedAt = DateTime.Now,
-                        ExpiresAt = DateTime.Now.AddMilliseconds(DDPNB.Common.Expiry),
-                    });
+                var session = new Session()
+                {
+                    SessionId = SessionId,
+                    UserId = user.Id,
+                    CreatedAt = DateTime.Now,
+                    ExpiresAt = DateTime.Now.AddMilliseconds(DDPNB.Common.Expiry),
+                };
 
-                data.SubmitChanges();
-                Common.LoggedInUser = user;
+                Common.Session = session;
                 this.Close();
             }
             catch(Exception ex)
             {
-                Common.LoggedInUser = null;
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }

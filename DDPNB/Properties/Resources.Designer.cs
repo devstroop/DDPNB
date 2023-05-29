@@ -83,6 +83,16 @@ namespace DDPNB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cube_x16 {
+            get {
+                object obj = ResourceManager.GetObject("cube_x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap info_x16 {
             get {
                 object obj = ResourceManager.GetObject("info_x16", resourceCulture);
@@ -156,6 +166,16 @@ namespace DDPNB.Properties {
         internal static System.Drawing.Bitmap warning_x16 {
             get {
                 object obj = ResourceManager.GetObject("warning_x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wrench_x16 {
+            get {
+                object obj = ResourceManager.GetObject("wrench_x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
