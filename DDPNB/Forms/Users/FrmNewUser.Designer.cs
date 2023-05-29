@@ -28,128 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.tBoxSearch = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.tBoxName = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.tBoxEmail = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.tBoxPhone = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.tBoxPassword = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.tBoxAddress = new System.Windows.Forms.TextBox();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.cmbBoxRole = new System.Windows.Forms.ComboBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.chkBoxMultiSession = new System.Windows.Forms.CheckBox();
+            this.chkBoxActive = new System.Windows.Forms.CheckBox();
+            this.panelbody = new System.Windows.Forms.Panel();
+            this.panelFooter = new System.Windows.Forms.Panel();
+            this.panelHead = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelbody.SuspendLayout();
+            this.panelFooter.SuspendLayout();
+            this.panelHead.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblSearch
+            // lblName
             // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(5, 6);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(35, 13);
-            this.lblSearch.TabIndex = 5;
-            this.lblSearch.Text = "Name";
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(5, 6);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.TabIndex = 5;
+            this.lblName.Text = "Name";
             // 
-            // tBoxSearch
+            // tBoxName
             // 
-            this.tBoxSearch.Location = new System.Drawing.Point(64, 3);
-            this.tBoxSearch.Name = "tBoxSearch";
-            this.tBoxSearch.Size = new System.Drawing.Size(250, 20);
-            this.tBoxSearch.TabIndex = 4;
+            this.tBoxName.Location = new System.Drawing.Point(64, 3);
+            this.tBoxName.Name = "tBoxName";
+            this.tBoxName.Size = new System.Drawing.Size(250, 20);
+            this.tBoxName.TabIndex = 4;
             // 
-            // label1
+            // lblEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Email";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(5, 32);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.TabIndex = 7;
+            this.lblEmail.Text = "Email";
             // 
-            // textBox1
+            // tBoxEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 20);
-            this.textBox1.TabIndex = 6;
+            this.tBoxEmail.Location = new System.Drawing.Point(64, 29);
+            this.tBoxEmail.Name = "tBoxEmail";
+            this.tBoxEmail.Size = new System.Drawing.Size(250, 20);
+            this.tBoxEmail.TabIndex = 6;
             // 
-            // label2
+            // lblPhone
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Phone";
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Location = new System.Drawing.Point(5, 58);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(38, 13);
+            this.lblPhone.TabIndex = 9;
+            this.lblPhone.Text = "Phone";
             // 
-            // textBox2
+            // tBoxPhone
             // 
-            this.textBox2.Location = new System.Drawing.Point(64, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 20);
-            this.textBox2.TabIndex = 8;
+            this.tBoxPhone.Location = new System.Drawing.Point(64, 55);
+            this.tBoxPhone.Name = "tBoxPhone";
+            this.tBoxPhone.Size = new System.Drawing.Size(250, 20);
+            this.tBoxPhone.TabIndex = 8;
             // 
-            // label3
+            // lblPassword
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(320, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Password";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(320, 6);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblPassword.TabIndex = 11;
+            this.lblPassword.Text = "Password";
             // 
-            // textBox3
+            // tBoxPassword
             // 
-            this.textBox3.Location = new System.Drawing.Point(379, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 20);
-            this.textBox3.TabIndex = 10;
+            this.tBoxPassword.Location = new System.Drawing.Point(379, 3);
+            this.tBoxPassword.Name = "tBoxPassword";
+            this.tBoxPassword.Size = new System.Drawing.Size(194, 20);
+            this.tBoxPassword.TabIndex = 10;
             // 
-            // label4
+            // lblAddress
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Address";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(5, 84);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(45, 13);
+            this.lblAddress.TabIndex = 13;
+            this.lblAddress.Text = "Address";
             // 
-            // textBox4
+            // tBoxAddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(64, 81);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 51);
-            this.textBox4.TabIndex = 12;
+            this.tBoxAddress.Location = new System.Drawing.Point(64, 81);
+            this.tBoxAddress.Multiline = true;
+            this.tBoxAddress.Name = "tBoxAddress";
+            this.tBoxAddress.Size = new System.Drawing.Size(250, 51);
+            this.tBoxAddress.TabIndex = 12;
             // 
-            // label5
+            // lblRole
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(320, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 13);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Role";
+            this.lblRole.AutoSize = true;
+            this.lblRole.Location = new System.Drawing.Point(320, 31);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(29, 13);
+            this.lblRole.TabIndex = 15;
+            this.lblRole.Text = "Role";
             // 
-            // comboBox1
+            // cmbBoxRole
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(379, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(194, 21);
-            this.comboBox1.TabIndex = 16;
+            this.cmbBoxRole.FormattingEnabled = true;
+            this.cmbBoxRole.Location = new System.Drawing.Point(379, 28);
+            this.cmbBoxRole.Name = "cmbBoxRole";
+            this.cmbBoxRole.Size = new System.Drawing.Size(194, 21);
+            this.cmbBoxRole.TabIndex = 16;
             // 
             // btnSubmit
             // 
@@ -173,126 +173,127 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // checkBox1
+            // chkBoxMultiSession
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(379, 55);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(88, 17);
-            this.checkBox1.TabIndex = 19;
-            this.checkBox1.Text = "Multi Session";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkBoxMultiSession.AutoSize = true;
+            this.chkBoxMultiSession.Location = new System.Drawing.Point(379, 55);
+            this.chkBoxMultiSession.Name = "chkBoxMultiSession";
+            this.chkBoxMultiSession.Size = new System.Drawing.Size(88, 17);
+            this.chkBoxMultiSession.TabIndex = 19;
+            this.chkBoxMultiSession.Text = "Multi Session";
+            this.chkBoxMultiSession.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkBoxActive
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(379, 78);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(56, 17);
-            this.checkBox2.TabIndex = 20;
-            this.checkBox2.Text = "Active";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkBoxActive.AutoSize = true;
+            this.chkBoxActive.Location = new System.Drawing.Point(379, 78);
+            this.chkBoxActive.Name = "chkBoxActive";
+            this.chkBoxActive.Size = new System.Drawing.Size(56, 17);
+            this.chkBoxActive.TabIndex = 20;
+            this.chkBoxActive.Text = "Active";
+            this.chkBoxActive.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panelbody
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelbody.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.tBoxSearch);
-            this.panel1.Controls.Add(this.lblSearch);
-            this.panel1.Controls.Add(this.checkBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Location = new System.Drawing.Point(12, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(576, 138);
-            this.panel1.TabIndex = 22;
+            this.panelbody.Controls.Add(this.tBoxName);
+            this.panelbody.Controls.Add(this.lblName);
+            this.panelbody.Controls.Add(this.chkBoxActive);
+            this.panelbody.Controls.Add(this.tBoxEmail);
+            this.panelbody.Controls.Add(this.chkBoxMultiSession);
+            this.panelbody.Controls.Add(this.lblEmail);
+            this.panelbody.Controls.Add(this.tBoxPhone);
+            this.panelbody.Controls.Add(this.lblPhone);
+            this.panelbody.Controls.Add(this.cmbBoxRole);
+            this.panelbody.Controls.Add(this.tBoxPassword);
+            this.panelbody.Controls.Add(this.lblRole);
+            this.panelbody.Controls.Add(this.lblPassword);
+            this.panelbody.Controls.Add(this.lblAddress);
+            this.panelbody.Controls.Add(this.tBoxAddress);
+            this.panelbody.Location = new System.Drawing.Point(12, 42);
+            this.panelbody.Name = "panelbody";
+            this.panelbody.Size = new System.Drawing.Size(576, 138);
+            this.panelbody.TabIndex = 22;
             // 
-            // panel2
+            // panelFooter
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.panelFooter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.btnCancel);
-            this.panel2.Controls.Add(this.btnSubmit);
-            this.panel2.Location = new System.Drawing.Point(12, 186);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(576, 29);
-            this.panel2.TabIndex = 23;
+            this.panelFooter.Controls.Add(this.btnCancel);
+            this.panelFooter.Controls.Add(this.btnSubmit);
+            this.panelFooter.Location = new System.Drawing.Point(12, 186);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Size = new System.Drawing.Size(576, 29);
+            this.panelFooter.TabIndex = 23;
             // 
-            // panel3
+            // panelHead
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panelHead.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(12, 7);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(576, 29);
-            this.panel3.TabIndex = 25;
+            this.panelHead.Controls.Add(this.lblTitle);
+            this.panelHead.Location = new System.Drawing.Point(12, 7);
+            this.panelHead.Name = "panelHead";
+            this.panelHead.Size = new System.Drawing.Size(576, 29);
+            this.panelHead.TabIndex = 25;
             // 
-            // label6
+            // lblTitle
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(254, 4);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(3);
-            this.label6.Size = new System.Drawing.Size(68, 21);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "New User";
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTitle.Location = new System.Drawing.Point(254, 4);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Padding = new System.Windows.Forms.Padding(3);
+            this.lblTitle.Size = new System.Drawing.Size(68, 21);
+            this.lblTitle.TabIndex = 25;
+            this.lblTitle.Text = "New User";
             // 
             // FrmNewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 225);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelHead);
+            this.Controls.Add(this.panelFooter);
+            this.Controls.Add(this.panelbody);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmNewUser";
             this.Text = "New User";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.Load += new System.EventHandler(this.FrmNewUser_Load);
+            this.panelbody.ResumeLayout(false);
+            this.panelbody.PerformLayout();
+            this.panelFooter.ResumeLayout(false);
+            this.panelHead.ResumeLayout(false);
+            this.panelHead.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblSearch;
-        private System.Windows.Forms.TextBox tBoxSearch;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox tBoxName;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox tBoxEmail;
+        private System.Windows.Forms.Label lblPhone;
+        private System.Windows.Forms.TextBox tBoxPhone;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox tBoxPassword;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox tBoxAddress;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.ComboBox cmbBoxRole;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox chkBoxMultiSession;
+        private System.Windows.Forms.CheckBox chkBoxActive;
+        private System.Windows.Forms.Panel panelbody;
+        private System.Windows.Forms.Panel panelFooter;
+        private System.Windows.Forms.Panel panelHead;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
