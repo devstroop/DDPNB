@@ -37,10 +37,10 @@
             this.tBoxSearch = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnActivate = new System.Windows.Forms.Button();
-            this.btnSuspend = new System.Windows.Forms.Button();
+            this.btnSuspendActivate = new System.Windows.Forms.Button();
             this.btnModify = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -54,7 +54,10 @@
             this.dgvUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsers.Location = new System.Drawing.Point(12, 55);
+            this.dgvUsers.MultiSelect = false;
             this.dgvUsers.Name = "dgvUsers";
+            this.dgvUsers.ReadOnly = true;
+            this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUsers.Size = new System.Drawing.Size(576, 262);
             this.dgvUsers.TabIndex = 0;
             // 
@@ -62,6 +65,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblSearchBy);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.cmbBoxSearchBy);
@@ -76,7 +80,7 @@
             // 
             this.lblSearchBy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSearchBy.AutoSize = true;
-            this.lblSearchBy.Location = new System.Drawing.Point(339, 11);
+            this.lblSearchBy.Location = new System.Drawing.Point(337, 11);
             this.lblSearchBy.Name = "lblSearchBy";
             this.lblSearchBy.Size = new System.Drawing.Size(19, 13);
             this.lblSearchBy.TabIndex = 6;
@@ -85,7 +89,7 @@
             // btnSearch
             // 
             this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.Location = new System.Drawing.Point(498, 6);
+            this.btnSearch.Location = new System.Drawing.Point(496, 6);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 5;
@@ -102,7 +106,7 @@
             "Name",
             "Phone",
             "Email"});
-            this.cmbBoxSearchBy.Location = new System.Drawing.Point(364, 8);
+            this.cmbBoxSearchBy.Location = new System.Drawing.Point(362, 8);
             this.cmbBoxSearchBy.Name = "cmbBoxSearchBy";
             this.cmbBoxSearchBy.Size = new System.Drawing.Size(128, 21);
             this.cmbBoxSearchBy.TabIndex = 4;
@@ -122,51 +126,44 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tBoxSearch.Location = new System.Drawing.Point(62, 8);
             this.tBoxSearch.Name = "tBoxSearch";
-            this.tBoxSearch.Size = new System.Drawing.Size(271, 20);
+            this.tBoxSearch.Size = new System.Drawing.Size(269, 20);
             this.tBoxSearch.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnRefresh);
-            this.panel2.Controls.Add(this.btnActivate);
-            this.panel2.Controls.Add(this.btnSuspend);
+            this.panel2.Controls.Add(this.btnSuspendActivate);
             this.panel2.Controls.Add(this.btnModify);
             this.panel2.Controls.Add(this.btnNew);
             this.panel2.Location = new System.Drawing.Point(12, 323);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(576, 28);
+            this.panel2.Size = new System.Drawing.Size(576, 31);
             this.panel2.TabIndex = 2;
             // 
             // btnRefresh
             // 
             this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRefresh.Location = new System.Drawing.Point(498, 3);
+            this.btnRefresh.Location = new System.Drawing.Point(496, 3);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 4;
-            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.Text = "Refresh (F5)";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // btnActivate
+            // btnSuspendActivate
             // 
-            this.btnActivate.Location = new System.Drawing.Point(251, 3);
-            this.btnActivate.Name = "btnActivate";
-            this.btnActivate.Size = new System.Drawing.Size(75, 23);
-            this.btnActivate.TabIndex = 3;
-            this.btnActivate.Text = "Activate";
-            this.btnActivate.UseVisualStyleBackColor = true;
-            // 
-            // btnSuspend
-            // 
-            this.btnSuspend.Location = new System.Drawing.Point(165, 3);
-            this.btnSuspend.Name = "btnSuspend";
-            this.btnSuspend.Size = new System.Drawing.Size(75, 23);
-            this.btnSuspend.TabIndex = 2;
-            this.btnSuspend.Text = "Suspend";
-            this.btnSuspend.UseVisualStyleBackColor = true;
+            this.btnSuspendActivate.Location = new System.Drawing.Point(165, 3);
+            this.btnSuspendActivate.Name = "btnSuspendActivate";
+            this.btnSuspendActivate.Size = new System.Drawing.Size(118, 23);
+            this.btnSuspendActivate.TabIndex = 2;
+            this.btnSuspendActivate.Text = "Suspend/Activate";
+            this.btnSuspendActivate.UseVisualStyleBackColor = true;
+            this.btnSuspendActivate.Click += new System.EventHandler(this.btnSuspendActivate_Click);
             // 
             // btnModify
             // 
@@ -176,6 +173,7 @@
             this.btnModify.TabIndex = 1;
             this.btnModify.Text = "Modify";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnNew
             // 
@@ -186,6 +184,16 @@
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(289, 3);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // FrmAllUsers
             // 
@@ -217,10 +225,10 @@
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox tBoxSearch;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnActivate;
-        private System.Windows.Forms.Button btnSuspend;
+        private System.Windows.Forms.Button btnSuspendActivate;
         private System.Windows.Forms.Button btnModify;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Label lblSearchBy;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

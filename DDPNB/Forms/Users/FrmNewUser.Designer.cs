@@ -58,108 +58,121 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(5, 6);
+            this.lblName.Location = new System.Drawing.Point(7, 7);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.Size = new System.Drawing.Size(44, 16);
             this.lblName.TabIndex = 5;
             this.lblName.Text = "Name";
             // 
             // tBoxName
             // 
-            this.tBoxName.Location = new System.Drawing.Point(64, 3);
+            this.tBoxName.Location = new System.Drawing.Point(85, 4);
+            this.tBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tBoxName.Name = "tBoxName";
-            this.tBoxName.Size = new System.Drawing.Size(250, 20);
+            this.tBoxName.Size = new System.Drawing.Size(332, 22);
             this.tBoxName.TabIndex = 4;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(5, 32);
+            this.lblEmail.Location = new System.Drawing.Point(7, 39);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.Size = new System.Drawing.Size(41, 16);
             this.lblEmail.TabIndex = 7;
             this.lblEmail.Text = "Email";
             // 
             // tBoxEmail
             // 
-            this.tBoxEmail.Location = new System.Drawing.Point(64, 29);
+            this.tBoxEmail.Location = new System.Drawing.Point(85, 36);
+            this.tBoxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tBoxEmail.Name = "tBoxEmail";
-            this.tBoxEmail.Size = new System.Drawing.Size(250, 20);
+            this.tBoxEmail.Size = new System.Drawing.Size(332, 22);
             this.tBoxEmail.TabIndex = 6;
             // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(5, 58);
+            this.lblPhone.Location = new System.Drawing.Point(7, 71);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(38, 13);
+            this.lblPhone.Size = new System.Drawing.Size(46, 16);
             this.lblPhone.TabIndex = 9;
             this.lblPhone.Text = "Phone";
             // 
             // tBoxPhone
             // 
-            this.tBoxPhone.Location = new System.Drawing.Point(64, 55);
+            this.tBoxPhone.Location = new System.Drawing.Point(85, 68);
+            this.tBoxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tBoxPhone.Name = "tBoxPhone";
-            this.tBoxPhone.Size = new System.Drawing.Size(250, 20);
+            this.tBoxPhone.Size = new System.Drawing.Size(332, 22);
             this.tBoxPhone.TabIndex = 8;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(320, 6);
+            this.lblPassword.Location = new System.Drawing.Point(427, 7);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblPassword.Size = new System.Drawing.Size(67, 16);
             this.lblPassword.TabIndex = 11;
             this.lblPassword.Text = "Password";
             // 
             // tBoxPassword
             // 
-            this.tBoxPassword.Location = new System.Drawing.Point(379, 3);
+            this.tBoxPassword.Location = new System.Drawing.Point(505, 4);
+            this.tBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tBoxPassword.Name = "tBoxPassword";
-            this.tBoxPassword.Size = new System.Drawing.Size(194, 20);
+            this.tBoxPassword.Size = new System.Drawing.Size(257, 22);
             this.tBoxPassword.TabIndex = 10;
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(5, 84);
+            this.lblAddress.Location = new System.Drawing.Point(7, 103);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(45, 13);
+            this.lblAddress.Size = new System.Drawing.Size(58, 16);
             this.lblAddress.TabIndex = 13;
             this.lblAddress.Text = "Address";
             // 
             // tBoxAddress
             // 
-            this.tBoxAddress.Location = new System.Drawing.Point(64, 81);
+            this.tBoxAddress.Location = new System.Drawing.Point(85, 100);
+            this.tBoxAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tBoxAddress.Multiline = true;
             this.tBoxAddress.Name = "tBoxAddress";
-            this.tBoxAddress.Size = new System.Drawing.Size(250, 51);
+            this.tBoxAddress.Size = new System.Drawing.Size(332, 62);
             this.tBoxAddress.TabIndex = 12;
             // 
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(320, 31);
+            this.lblRole.Location = new System.Drawing.Point(427, 38);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(29, 13);
+            this.lblRole.Size = new System.Drawing.Size(36, 16);
             this.lblRole.TabIndex = 15;
             this.lblRole.Text = "Role";
             // 
             // cmbBoxRole
             // 
             this.cmbBoxRole.FormattingEnabled = true;
-            this.cmbBoxRole.Location = new System.Drawing.Point(379, 28);
+            this.cmbBoxRole.Location = new System.Drawing.Point(505, 34);
+            this.cmbBoxRole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbBoxRole.Name = "cmbBoxRole";
-            this.cmbBoxRole.Size = new System.Drawing.Size(194, 21);
+            this.cmbBoxRole.Size = new System.Drawing.Size(257, 24);
             this.cmbBoxRole.TabIndex = 16;
             this.cmbBoxRole.SelectedIndexChanged += new System.EventHandler(this.cmbBoxRole_SelectedIndexChanged);
             // 
             // btnSubmit
             // 
             this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmit.Location = new System.Drawing.Point(388, 3);
+            this.btnSubmit.Location = new System.Drawing.Point(517, 4);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(87, 23);
+            this.btnSubmit.Size = new System.Drawing.Size(116, 28);
             this.btnSubmit.TabIndex = 17;
             this.btnSubmit.Text = "Submit (F2)";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -168,9 +181,10 @@
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(481, 3);
+            this.btnCancel.Location = new System.Drawing.Point(641, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 23);
+            this.btnCancel.Size = new System.Drawing.Size(117, 28);
             this.btnCancel.TabIndex = 18;
             this.btnCancel.Text = "Cancel (ESC)";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -179,9 +193,10 @@
             // chkBoxMultiSession
             // 
             this.chkBoxMultiSession.AutoSize = true;
-            this.chkBoxMultiSession.Location = new System.Drawing.Point(379, 55);
+            this.chkBoxMultiSession.Location = new System.Drawing.Point(505, 68);
+            this.chkBoxMultiSession.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkBoxMultiSession.Name = "chkBoxMultiSession";
-            this.chkBoxMultiSession.Size = new System.Drawing.Size(88, 17);
+            this.chkBoxMultiSession.Size = new System.Drawing.Size(105, 20);
             this.chkBoxMultiSession.TabIndex = 19;
             this.chkBoxMultiSession.Text = "Multi Session";
             this.chkBoxMultiSession.UseVisualStyleBackColor = true;
@@ -189,9 +204,10 @@
             // chkBoxActive
             // 
             this.chkBoxActive.AutoSize = true;
-            this.chkBoxActive.Location = new System.Drawing.Point(379, 78);
+            this.chkBoxActive.Location = new System.Drawing.Point(505, 96);
+            this.chkBoxActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkBoxActive.Name = "chkBoxActive";
-            this.chkBoxActive.Size = new System.Drawing.Size(56, 17);
+            this.chkBoxActive.Size = new System.Drawing.Size(63, 20);
             this.chkBoxActive.TabIndex = 20;
             this.chkBoxActive.Text = "Active";
             this.chkBoxActive.UseVisualStyleBackColor = true;
@@ -216,9 +232,10 @@
             this.panelbody.Controls.Add(this.lblPassword);
             this.panelbody.Controls.Add(this.lblAddress);
             this.panelbody.Controls.Add(this.tBoxAddress);
-            this.panelbody.Location = new System.Drawing.Point(3, 38);
+            this.panelbody.Location = new System.Drawing.Point(4, 47);
+            this.panelbody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelbody.Name = "panelbody";
-            this.panelbody.Size = new System.Drawing.Size(576, 176);
+            this.panelbody.Size = new System.Drawing.Size(767, 216);
             this.panelbody.TabIndex = 22;
             // 
             // panelFooter
@@ -228,9 +245,10 @@
             this.panelFooter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFooter.Controls.Add(this.btnCancel);
             this.panelFooter.Controls.Add(this.btnSubmit);
-            this.panelFooter.Location = new System.Drawing.Point(4, 220);
+            this.panelFooter.Location = new System.Drawing.Point(5, 271);
+            this.panelFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(574, 29);
+            this.panelFooter.Size = new System.Drawing.Size(765, 35);
             this.panelFooter.TabIndex = 23;
             // 
             // panelHead
@@ -239,9 +257,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelHead.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHead.Controls.Add(this.lblTitle);
-            this.panelHead.Location = new System.Drawing.Point(3, 3);
+            this.panelHead.Location = new System.Drawing.Point(4, 4);
+            this.panelHead.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelHead.Name = "panelHead";
-            this.panelHead.Size = new System.Drawing.Size(576, 29);
+            this.panelHead.Size = new System.Drawing.Size(767, 35);
             this.panelHead.TabIndex = 25;
             // 
             // lblTitle
@@ -251,10 +270,11 @@
             this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTitle.Location = new System.Drawing.Point(253, 3);
+            this.lblTitle.Location = new System.Drawing.Point(337, 4);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Padding = new System.Windows.Forms.Padding(3);
-            this.lblTitle.Size = new System.Drawing.Size(68, 21);
+            this.lblTitle.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTitle.Size = new System.Drawing.Size(70, 23);
             this.lblTitle.TabIndex = 25;
             this.lblTitle.Text = "New User";
             // 
@@ -266,20 +286,22 @@
             this.panel1.Controls.Add(this.panelHead);
             this.panel1.Controls.Add(this.panelbody);
             this.panel1.Controls.Add(this.panelFooter);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(16, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(583, 254);
+            this.panel1.Size = new System.Drawing.Size(777, 312);
             this.panel1.TabIndex = 26;
             // 
             // FrmNewUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 278);
+            this.ClientSize = new System.Drawing.Size(807, 342);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmNewUser";
             this.Text = "New User";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmNewUser_FormClosing);
             this.Load += new System.EventHandler(this.FrmNewUser_Load);
             this.panelbody.ResumeLayout(false);
             this.panelbody.PerformLayout();

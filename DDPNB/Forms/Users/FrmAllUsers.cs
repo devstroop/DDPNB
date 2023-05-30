@@ -39,5 +39,20 @@ namespace DDPNB.Forms.Users
         private void btnNew_Click(object sender, EventArgs e) => (new Users.FrmNewUser() { MdiParent = this.MdiParent }).Show();
 
         private void btnRefresh_Click(object sender, EventArgs e) => FrmAllUsers_Load(sender, e);
+
+        private void btnSuspendActivate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

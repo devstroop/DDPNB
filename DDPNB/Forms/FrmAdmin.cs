@@ -312,5 +312,10 @@ namespace DDPNB.Forms
         {
             (new FrmReleaseNote() { MdiParent = this }).Show();
         }
+
+        private void userRolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.FrmUserRoles() { MdiParent = this }).Show();
+        }
     }
 }

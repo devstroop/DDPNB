@@ -51,6 +51,11 @@ namespace DDPNB.Forms.Users
                 data.Users.InsertOnSubmit(user);
                 data.SubmitChanges();
                 MessageBox.Show("User successfully created.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.tBoxName.Text = String.Empty;
+                this.tBoxPhone.Text = String.Empty;
+                this.tBoxEmail.Text = String.Empty;
+                this.tBoxAddress.Text = String.Empty;
                 this.Close();
             }
             catch(Exception exc)
@@ -68,6 +73,21 @@ namespace DDPNB.Forms.Users
         private void cmbBoxRole_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.Role = data.UserRoles.Single(elem => elem.Name.Trim() == this.cmbBoxRole.Text.Trim());
+        }
+
+        private void FrmNewUser_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!String.IsNullOrEmpty(this.tBoxName.Text) ||
+                !String.IsNullOrEmpty(this.tBoxPhone.Text) ||
+                !String.IsNullOrEmpty(this.tBoxEmail.Text) ||
+                !String.IsNullOrEmpty(this.tBoxAddress.Text))
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to discard the changes?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.No)
+                {
+                    e.Cancel = true; // Cancel the form closing event
+                }
+            }
         }
     }
 }

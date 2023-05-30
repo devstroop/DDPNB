@@ -46,19 +46,21 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.findTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.microservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.suspendMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.findMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifyUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suspendUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.findUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.userRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userPermissionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.microservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suspendMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.findMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allMicroservicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -100,9 +102,6 @@
             this.btnF7 = new System.Windows.Forms.Button();
             this.btnF8 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.userRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.userPermissionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripTop.SuspendLayout();
             this.toolStripFooter.SuspendLayout();
             this.flowPanelShortcuts.SuspendLayout();
@@ -261,46 +260,6 @@
             this.allTransactionsToolStripMenuItem.Text = "All Transactions";
             this.allTransactionsToolStripMenuItem.Click += new System.EventHandler(this.allTransactionsToolStripMenuItem_Click);
             // 
-            // microservicesToolStripMenuItem
-            // 
-            this.microservicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.suspendMicroservicesToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.findMicroservicesToolStripMenuItem,
-            this.allMicroservicesToolStripMenuItem});
-            this.microservicesToolStripMenuItem.Image = global::DDPNB.Properties.Resources.cube_x16;
-            this.microservicesToolStripMenuItem.Name = "microservicesToolStripMenuItem";
-            this.microservicesToolStripMenuItem.Size = new System.Drawing.Size(118, 21);
-            this.microservicesToolStripMenuItem.Text = "Microservices";
-            // 
-            // suspendMicroservicesToolStripMenuItem
-            // 
-            this.suspendMicroservicesToolStripMenuItem.Name = "suspendMicroservicesToolStripMenuItem";
-            this.suspendMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.suspendMicroservicesToolStripMenuItem.Text = "Suspend/Activate Microservices";
-            this.suspendMicroservicesToolStripMenuItem.Click += new System.EventHandler(this.suspendMicroservicesToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(265, 6);
-            // 
-            // findMicroservicesToolStripMenuItem
-            // 
-            this.findMicroservicesToolStripMenuItem.Name = "findMicroservicesToolStripMenuItem";
-            this.findMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.findMicroservicesToolStripMenuItem.Text = "Find Microservices";
-            this.findMicroservicesToolStripMenuItem.Click += new System.EventHandler(this.findMicroservicesToolStripMenuItem_Click);
-            // 
-            // allMicroservicesToolStripMenuItem
-            // 
-            this.allMicroservicesToolStripMenuItem.Name = "allMicroservicesToolStripMenuItem";
-            this.allMicroservicesToolStripMenuItem.ShortcutKeyDisplayString = "F8";
-            this.allMicroservicesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F8;
-            this.allMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.allMicroservicesToolStripMenuItem.Text = "All Microservices";
-            this.allMicroservicesToolStripMenuItem.Click += new System.EventHandler(this.allMicroservicesToolStripMenuItem_Click);
-            // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -309,7 +268,6 @@
             this.deleteUserToolStripMenuItem,
             this.suspendUserToolStripMenuItem,
             this.toolStripSeparator1,
-            this.findUsersToolStripMenuItem,
             this.allUsersToolStripMenuItem,
             this.toolStripSeparator6,
             this.userRolesToolStripMenuItem,
@@ -363,6 +321,64 @@
             this.allUsersToolStripMenuItem.Text = "All Users";
             this.allUsersToolStripMenuItem.Click += new System.EventHandler(this.allUsersToolStripMenuItem_Click);
             // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(210, 6);
+            // 
+            // userRolesToolStripMenuItem
+            // 
+            this.userRolesToolStripMenuItem.Name = "userRolesToolStripMenuItem";
+            this.userRolesToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.userRolesToolStripMenuItem.Text = "User Roles";
+            this.userRolesToolStripMenuItem.Click += new System.EventHandler(this.userRolesToolStripMenuItem_Click);
+            // 
+            // userPermissionsToolStripMenuItem
+            // 
+            this.userPermissionsToolStripMenuItem.Name = "userPermissionsToolStripMenuItem";
+            this.userPermissionsToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.userPermissionsToolStripMenuItem.Text = "User Permissions";
+            // 
+            // microservicesToolStripMenuItem
+            // 
+            this.microservicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.suspendMicroservicesToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.findMicroservicesToolStripMenuItem,
+            this.allMicroservicesToolStripMenuItem});
+            this.microservicesToolStripMenuItem.Image = global::DDPNB.Properties.Resources.cube_x16;
+            this.microservicesToolStripMenuItem.Name = "microservicesToolStripMenuItem";
+            this.microservicesToolStripMenuItem.Size = new System.Drawing.Size(118, 21);
+            this.microservicesToolStripMenuItem.Text = "Microservices";
+            // 
+            // suspendMicroservicesToolStripMenuItem
+            // 
+            this.suspendMicroservicesToolStripMenuItem.Name = "suspendMicroservicesToolStripMenuItem";
+            this.suspendMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.suspendMicroservicesToolStripMenuItem.Text = "Suspend/Activate Microservices";
+            this.suspendMicroservicesToolStripMenuItem.Click += new System.EventHandler(this.suspendMicroservicesToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(265, 6);
+            // 
+            // findMicroservicesToolStripMenuItem
+            // 
+            this.findMicroservicesToolStripMenuItem.Name = "findMicroservicesToolStripMenuItem";
+            this.findMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.findMicroservicesToolStripMenuItem.Text = "Find Microservices";
+            this.findMicroservicesToolStripMenuItem.Click += new System.EventHandler(this.findMicroservicesToolStripMenuItem_Click);
+            // 
+            // allMicroservicesToolStripMenuItem
+            // 
+            this.allMicroservicesToolStripMenuItem.Name = "allMicroservicesToolStripMenuItem";
+            this.allMicroservicesToolStripMenuItem.ShortcutKeyDisplayString = "F8";
+            this.allMicroservicesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F8;
+            this.allMicroservicesToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.allMicroservicesToolStripMenuItem.Text = "All Microservices";
+            this.allMicroservicesToolStripMenuItem.Click += new System.EventHandler(this.allMicroservicesToolStripMenuItem_Click);
+            // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -413,7 +429,7 @@
             this.exportUsersToolStripMenuItem,
             this.exportAllToolStripMenuItem});
             this.importExportToolStripMenuItem.Name = "importExportToolStripMenuItem";
-            this.importExportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importExportToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.importExportToolStripMenuItem.Text = "Import/Export";
             // 
             // importJobsToolStripMenuItem
@@ -497,7 +513,7 @@
             this.backupToolStripMenuItem,
             this.restoreToolStripMenuItem});
             this.backupRestoreToolStripMenuItem.Name = "backupRestoreToolStripMenuItem";
-            this.backupRestoreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backupRestoreToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.backupRestoreToolStripMenuItem.Text = "Backup/Restore";
             // 
             // backupToolStripMenuItem
@@ -742,23 +758,6 @@
             this.panel3.Size = new System.Drawing.Size(134, 27);
             this.panel3.TabIndex = 10;
             // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(210, 6);
-            // 
-            // userRolesToolStripMenuItem
-            // 
-            this.userRolesToolStripMenuItem.Name = "userRolesToolStripMenuItem";
-            this.userRolesToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.userRolesToolStripMenuItem.Text = "User Roles";
-            // 
-            // userPermissionsToolStripMenuItem
-            // 
-            this.userPermissionsToolStripMenuItem.Name = "userPermissionsToolStripMenuItem";
-            this.userPermissionsToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.userPermissionsToolStripMenuItem.Text = "User Permissions";
-            // 
             // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -856,7 +855,6 @@
         private System.Windows.Forms.ToolStripMenuItem findJobsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findTransactionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findMicroservicesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem findUsersToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton tsBtnRunningAt;
         private System.Windows.Forms.ToolStripButton tsBtnReleaseNote;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;

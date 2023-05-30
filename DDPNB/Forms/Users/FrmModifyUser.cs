@@ -19,93 +19,127 @@ namespace DDPNB.Forms.Users
         {
             InitializeComponent();
             int? UserId = FrmPickUser.Pick();
-            user = data.Users.Single(elem => elem.Id == UserId);
+            if(UserId != null) user = data.Users.Single(elem => elem.Id == UserId);
         }
 
-        public FrmModifyUser(int UserId)
+        public FrmModifyUser(int? UserId)
         {
             InitializeComponent();
-            user = data.Users.Single(elem => elem.Id == UserId);
+            if (UserId != null) user = data.Users.Single(elem => elem.Id == UserId);
         }
 
         private void FrmModifyUser_Load(object sender, EventArgs e)
         {
+            if (user == null)
+            {
+                this.BeginInvoke(new Action(() => {
+                    this.Close();
+                }));
+                return;
+            }
+
             this.userRoles = data.UserRoles.ToList();
             this.cmbBoxRole.DataSource = this.userRoles.Select(elem => elem.Name.Trim()).ToList();
 
-            if (user != null)
-            {
-                this.tBoxName.Text = user.Name.Trim();
-                this.tBoxEmail.Text = user.Email.Trim();
-                this.tBoxPhone.Text = user.Phone.Trim();
-                this.tBoxAddress.Text = user.Address.Trim();
-                try
-                {
-                    foreach(var role in userRoles)
-                    {
-                        if(role != null && role.Id == user.UserRoleId)
-                        {
-                            this.cmbBoxRole.SelectedIndex = userRoles.IndexOf(role);
-                        }
-                    }
-                }
-                catch (Exception exc)
-                {
-                    this.lblValueCreatedBy.Text = string.Empty;
-                    MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                this.chkBoxMultiSession.Checked = user.MultiSession;
-                this.chkBoxActive.Checked = user.Active;
+            this.lblValueId.Text = $"{user.Id}";
+            this.tBoxName.Text = user.Name?.Trim();
+            this.tBoxEmail.Text = user.Email?.Trim();
+            this.tBoxPhone.Text = user.Phone?.Trim();
+            this.tBoxAddress.Text = user.Address?.Trim();
 
-                this.lblValueCreatedAt.Text = user.CreatedAt != null ? user.CreatedAt.ToString() : "NA";
-                try
+            try
+            {
+                var selectedRole = userRoles.FirstOrDefault(role => role != null && role.Id == user.UserRoleId);
+                if (selectedRole != null)
                 {
-                    if(user.CreatedBy != null)
+                    this.cmbBoxRole.SelectedIndex = userRoles.IndexOf(selectedRole);
+                }
+            }
+            catch (Exception exc)
+            {
+                this.lblValueCreatedBy.Text = "NA";
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            this.chkBoxMultiSession.Checked = user.MultiSession;
+            this.chkBoxActive.Checked = user.Active;
+            this.lblValueCreatedAt.Text = user.CreatedAt?.ToString() ?? "NA";
+
+            try
+            {
+                if (user.CreatedBy != null)
+                {
+                    var createdByUser = data.Users.SingleOrDefault(elem => elem.Id == user.CreatedBy);
+                    if (createdByUser != null)
                     {
-                        this.lblValueCreatedBy.Text = $"{data.Users.Single(elem => elem.Id == user.CreatedBy).Name.Trim()} ({user.CreatedBy})";
+                        this.lblValueCreatedBy.Text = $"{createdByUser.Name.Trim()} ({user.CreatedBy})";
                     }
                     else
                     {
                         this.lblValueCreatedBy.Text = "NA";
                     }
                 }
-                catch(Exception exc)
+                else
                 {
-                    this.lblValueCreatedBy.Text = String.Empty;
-                    MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.lblValueCreatedBy.Text = "NA";
                 }
+            }
+            catch (Exception exc)
+            {
+                this.lblValueCreatedBy.Text = "NA";
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
+            this.lblValueUpdatedAt.Text = user.UpdatedAt?.ToString() ?? "NA";
 
-                this.lblValueUpdatedAt.Text = user.UpdatedAt != null ? user.UpdatedAt.ToString() : "NA";
-                try
+            try
+            {
+                if (user.UpdatedBy != null)
                 {
-                    if (user.UpdatedBy != null)
+                    var updatedByUser = data.Users.SingleOrDefault(elem => elem.Id == user.UpdatedBy);
+                    if (updatedByUser != null)
                     {
-                        this.lblValueUpdatedBy.Text = $"{data.Users.Single(elem => elem.Id == user.UpdatedBy).Name.Trim()} ({user.UpdatedBy})";
+                        this.lblValueUpdatedBy.Text = $"{updatedByUser.Name.Trim()} ({user.UpdatedBy})";
                     }
                     else
                     {
                         this.lblValueUpdatedBy.Text = "NA";
                     }
-                        
                 }
-                catch (Exception exc)
+                else
                 {
-                    this.lblValueUpdatedBy.Text = String.Empty;
-                    MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.lblValueUpdatedBy.Text = "NA";
                 }
             }
+            catch (Exception exc)
+            {
+                this.lblValueUpdatedBy.Text = "NA";
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+
+            if (user.Id == Common.User.Id)
+            {
+                cmbBoxRole.Enabled = false;
+                chkBoxMultiSession.Enabled = false;
+                chkBoxActive.Enabled = false;
+            }
+
         }
+
 
         private void cmbBoxRole_SelectedIndexChanged(object sender, EventArgs e)
         {
-            user.UserRoleId = cmbBoxRole.SelectedIndex;
+            if(user != null)
+                user.UserRoleId = cmbBoxRole.SelectedIndex;
         }
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             try
             {
-                var existingUser = data.Users.SingleOrDefault(u => u.Id == user.Id);
+                var existingUser = data.Users.Single(u => u.Id == user.Id);
 
                 if (existingUser != null)
                 {
@@ -138,5 +172,18 @@ namespace DDPNB.Forms.Users
         {
             this.Close();
         }
+
+        private void FrmModifyUser_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (user != null)
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to discard the changes?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.No)
+                {
+                    e.Cancel = true; // Cancel the form closing event
+                }
+            }
+        }
+
     }
 }
