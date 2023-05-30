@@ -117,11 +117,6 @@ namespace DDPNB.Forms
             (new Jobs.FrmSuspendActivateJob(){ MdiParent = this }).Show();
         }
 
-        private void findJobsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            (new Jobs.FrmFindJobs(){ MdiParent = this }).Show();
-        }
-
         private void allJobsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             (new Jobs.FrmAllJobs(){ MdiParent = this }).Show();
@@ -147,10 +142,6 @@ namespace DDPNB.Forms
             (new Transactions.FrmSuspendActivateTransaction(){ MdiParent = this }).Show();
         }
 
-        private void findTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            (new Transactions.FrmFindTransactions(){ MdiParent = this }).Show();
-        }
 
         private void allTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -315,7 +306,27 @@ namespace DDPNB.Forms
 
         private void userRolesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            (new Users.FrmUserRoles() { MdiParent = this }).Show();
+            (new Users.UserRoles.FrmAllUserRoles() { MdiParent = this }).Show();
+        }
+
+        private void newRoleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.UserRoles.FrmNewUserRole() { MdiParent = this }).Show();
+        }
+
+        private void modifyRoleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.UserRoles.FrmModifyUserRole() { MdiParent = this }).Show();
+        }
+
+        private void deleteRoleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.UserRoles.FrmDeleteUserRole() { MdiParent = this }).Show();
+        }
+
+        private void allRolesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Users.UserRoles.FrmAllUserRoles() { MdiParent = this }).Show();
         }
     }
 }

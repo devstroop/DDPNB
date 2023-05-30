@@ -89,12 +89,6 @@
     <Compile Include="Forms\Jobs\FrmDeleteJob.Designer.cs">
       <DependentUpon>FrmDeleteJob.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Jobs\FrmFindJobs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Jobs\FrmFindJobs.Designer.cs">
-      <DependentUpon>FrmFindJobs.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Jobs\FrmModifyJob.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,12 +136,6 @@
     </Compile>
     <Compile Include="Forms\Transactions\FrmDeleteTransaction.Designer.cs">
       <DependentUpon>FrmDeleteTransaction.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Transactions\FrmFindTransactions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Transactions\FrmFindTransactions.Designer.cs">
-      <DependentUpon>FrmFindTransactions.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Transactions\FrmModifyTransaction.cs">
       <SubType>Form</SubType>
@@ -209,11 +197,29 @@
     <Compile Include="Forms\Users\FrmUserPermissions.Designer.cs">
       <DependentUpon>FrmUserPermissions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Users\FrmUserRoles.cs">
+    <Compile Include="Forms\Users\UserRoles\FrmAllUserRoles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Users\FrmUserRoles.Designer.cs">
-      <DependentUpon>FrmUserRoles.cs</DependentUpon>
+    <Compile Include="Forms\Users\UserRoles\FrmAllUserRoles.Designer.cs">
+      <DependentUpon>FrmAllUserRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\UserRoles\FrmDeleteUserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\UserRoles\FrmDeleteUserRole.Designer.cs">
+      <DependentUpon>FrmDeleteUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\UserRoles\FrmModifyUserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\UserRoles\FrmModifyUserRole.Designer.cs">
+      <DependentUpon>FrmModifyUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Users\UserRoles\FrmNewUserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Users\UserRoles\FrmNewUserRole.Designer.cs">
+      <DependentUpon>FrmNewUserRole.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Utility\FrmBackup.cs">
       <SubType>Form</SubType>
@@ -262,9 +268,6 @@
     <EmbeddedResource Include="Forms\Jobs\FrmDeleteJob.resx">
       <DependentUpon>FrmDeleteJob.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Jobs\FrmFindJobs.resx">
-      <DependentUpon>FrmFindJobs.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Jobs\FrmModifyJob.resx">
       <DependentUpon>FrmModifyJob.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,9 +291,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Transactions\FrmDeleteTransaction.resx">
       <DependentUpon>FrmDeleteTransaction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Transactions\FrmFindTransactions.resx">
-      <DependentUpon>FrmFindTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Transactions\FrmModifyTransaction.resx">
       <DependentUpon>FrmModifyTransaction.cs</DependentUpon>
@@ -322,8 +322,8 @@
     <EmbeddedResource Include="Forms\Users\FrmUserPermissions.resx">
       <DependentUpon>FrmUserPermissions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Users\FrmUserRoles.resx">
-      <DependentUpon>FrmUserRoles.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Users\UserRoles\FrmAllUserRoles.resx">
+      <DependentUpon>FrmAllUserRoles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Utility\FrmBackup.resx">
       <DependentUpon>FrmBackup.cs</DependentUpon>

@@ -70,6 +70,12 @@ namespace DDPNB.Forms.Users
                 MessageBox.Show("Cannot suspend or activate yourself.", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            var existingUser = data.Users.Single(u => u.Id == user.Id);
+            existingUser.Active = rBtnActive.Checked;
+
+            data.SubmitChanges();
+            MessageBox.Show("Applied successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Close();
         }
     }
 }

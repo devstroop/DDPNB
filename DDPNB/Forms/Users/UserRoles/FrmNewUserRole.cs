@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDPNB.Forms.Jobs
+namespace DDPNB.Forms.Users.UserRoles
 {
-    public partial class FrmFindJobs : Form
+    public partial class FrmNewUserRole : Form
     {
-        public FrmFindJobs()
+        public FrmNewUserRole()
         {
             InitializeComponent();
         }

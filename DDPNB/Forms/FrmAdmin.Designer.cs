@@ -36,7 +36,6 @@
             this.deleteJobToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suspendJobToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.findJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +43,6 @@
             this.deleteTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suspendTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.findTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allTransactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,6 +100,11 @@
             this.btnF7 = new System.Windows.Forms.Button();
             this.btnF8 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.newRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifyRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.allRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripTop.SuspendLayout();
             this.toolStripFooter.SuspendLayout();
             this.flowPanelShortcuts.SuspendLayout();
@@ -136,7 +139,6 @@
             this.deleteJobToolStripMenuItem,
             this.suspendJobToolStripMenuItem,
             this.toolStripSeparator2,
-            this.findJobsToolStripMenuItem,
             this.allJobsToolStripMenuItem});
             this.jobsToolStripMenuItem.Image = global::DDPNB.Properties.Resources.suitcase_x16;
             this.jobsToolStripMenuItem.Name = "jobsToolStripMenuItem";
@@ -178,13 +180,6 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(204, 6);
             // 
-            // findJobsToolStripMenuItem
-            // 
-            this.findJobsToolStripMenuItem.Name = "findJobsToolStripMenuItem";
-            this.findJobsToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.findJobsToolStripMenuItem.Text = "Find Jobs";
-            this.findJobsToolStripMenuItem.Click += new System.EventHandler(this.findJobsToolStripMenuItem_Click);
-            // 
             // allJobsToolStripMenuItem
             // 
             this.allJobsToolStripMenuItem.Name = "allJobsToolStripMenuItem";
@@ -202,7 +197,6 @@
             this.deleteTransactionToolStripMenuItem,
             this.suspendTransactionToolStripMenuItem,
             this.toolStripSeparator3,
-            this.findTransactionsToolStripMenuItem,
             this.allTransactionsToolStripMenuItem});
             this.transactionsToolStripMenuItem.Image = global::DDPNB.Properties.Resources.cash_flow_x16;
             this.transactionsToolStripMenuItem.Name = "transactionsToolStripMenuItem";
@@ -243,13 +237,6 @@
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(252, 6);
-            // 
-            // findTransactionsToolStripMenuItem
-            // 
-            this.findTransactionsToolStripMenuItem.Name = "findTransactionsToolStripMenuItem";
-            this.findTransactionsToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
-            this.findTransactionsToolStripMenuItem.Text = "Find Transactions";
-            this.findTransactionsToolStripMenuItem.Click += new System.EventHandler(this.findTransactionsToolStripMenuItem_Click);
             // 
             // allTransactionsToolStripMenuItem
             // 
@@ -328,6 +315,12 @@
             // 
             // userRolesToolStripMenuItem
             // 
+            this.userRolesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newRoleToolStripMenuItem,
+            this.modifyRoleToolStripMenuItem,
+            this.deleteRoleToolStripMenuItem,
+            this.toolStripSeparator7,
+            this.allRolesToolStripMenuItem});
             this.userRolesToolStripMenuItem.Name = "userRolesToolStripMenuItem";
             this.userRolesToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.userRolesToolStripMenuItem.Text = "User Roles";
@@ -758,6 +751,39 @@
             this.panel3.Size = new System.Drawing.Size(134, 27);
             this.panel3.TabIndex = 10;
             // 
+            // newRoleToolStripMenuItem
+            // 
+            this.newRoleToolStripMenuItem.Name = "newRoleToolStripMenuItem";
+            this.newRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newRoleToolStripMenuItem.Text = "New Role";
+            this.newRoleToolStripMenuItem.Click += new System.EventHandler(this.newRoleToolStripMenuItem_Click);
+            // 
+            // modifyRoleToolStripMenuItem
+            // 
+            this.modifyRoleToolStripMenuItem.Name = "modifyRoleToolStripMenuItem";
+            this.modifyRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modifyRoleToolStripMenuItem.Text = "Modify Role";
+            this.modifyRoleToolStripMenuItem.Click += new System.EventHandler(this.modifyRoleToolStripMenuItem_Click);
+            // 
+            // deleteRoleToolStripMenuItem
+            // 
+            this.deleteRoleToolStripMenuItem.Name = "deleteRoleToolStripMenuItem";
+            this.deleteRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteRoleToolStripMenuItem.Text = "Delete Role";
+            this.deleteRoleToolStripMenuItem.Click += new System.EventHandler(this.deleteRoleToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(177, 6);
+            // 
+            // allRolesToolStripMenuItem
+            // 
+            this.allRolesToolStripMenuItem.Name = "allRolesToolStripMenuItem";
+            this.allRolesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.allRolesToolStripMenuItem.Text = "All Roles";
+            this.allRolesToolStripMenuItem.Click += new System.EventHandler(this.allRolesToolStripMenuItem_Click);
+            // 
             // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -852,13 +878,16 @@
         private System.Windows.Forms.Button btnF7;
         private System.Windows.Forms.Button btnF8;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ToolStripMenuItem findJobsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem findTransactionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findMicroservicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton tsBtnRunningAt;
         private System.Windows.Forms.ToolStripButton tsBtnReleaseNote;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem userRolesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userPermissionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newRoleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifyRoleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteRoleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripMenuItem allRolesToolStripMenuItem;
     }
 }

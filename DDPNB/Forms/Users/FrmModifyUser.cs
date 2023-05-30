@@ -141,26 +141,19 @@ namespace DDPNB.Forms.Users
             {
                 var existingUser = data.Users.Single(u => u.Id == user.Id);
 
-                if (existingUser != null)
-                {
-                    existingUser.Name = tBoxName.Text.Trim();
-                    existingUser.Email = tBoxEmail.Text.Trim();
-                    existingUser.Phone = tBoxPhone.Text.Trim();
-                    existingUser.Address = tBoxAddress.Text.Trim();
-                    existingUser.UserRoleId = cmbBoxRole.SelectedIndex;
-                    existingUser.Active = chkBoxActive.Checked;
-                    existingUser.MultiSession = chkBoxMultiSession.Checked;
-                    existingUser.UpdatedAt = DateTime.Now;
-                    existingUser.UpdatedBy = Common.User.Id;
+                existingUser.Name = tBoxName.Text.Trim();
+                existingUser.Email = tBoxEmail.Text.Trim();
+                existingUser.Phone = tBoxPhone.Text.Trim();
+                existingUser.Address = tBoxAddress.Text.Trim();
+                existingUser.UserRoleId = cmbBoxRole.SelectedIndex;
+                existingUser.Active = chkBoxActive.Checked;
+                existingUser.MultiSession = chkBoxMultiSession.Checked;
+                existingUser.UpdatedAt = DateTime.Now;
+                existingUser.UpdatedBy = Common.User.Id;
 
-                    data.SubmitChanges();
-                    MessageBox.Show("Modified successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Close();
-                }
-                else
-                {
-                    MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                data.SubmitChanges();
+                MessageBox.Show("Modified successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
             }
             catch (Exception exc)
             {

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDPNB.Forms.Transactions
+namespace DDPNB.Forms.Users.UserRoles
 {
-    public partial class FrmFindTransactions : Form
+    public partial class FrmDeleteUserRole : Form
     {
-        public FrmFindTransactions()
+        public FrmDeleteUserRole()
         {
             InitializeComponent();
         }

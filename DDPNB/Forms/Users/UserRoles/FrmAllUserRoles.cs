@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DDPNB.Forms.Users
+namespace DDPNB.Forms.Users.UserRoles
 {
-    public partial class FrmUserRoles : Form
+    public partial class FrmAllUserRoles : Form
     {
         Data.DataClassesDataContext data = new Data.DataClassesDataContext();
         List<Data.UserRole> Roles = new List<Data.UserRole>();
-        public FrmUserRoles()
+        public FrmAllUserRoles()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
-﻿namespace DDPNB.Forms.Users
+﻿namespace DDPNB.Forms.Users.UserRoles
 {
-    partial class FrmUserRoles
+    partial class FrmAllUserRoles
     {
         /// <summary>
         /// Required designer variable.
