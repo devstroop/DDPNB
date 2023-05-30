@@ -137,12 +137,6 @@ namespace DDPNB.Forms
             (new Transactions.FrmDeleteTransaction(){ MdiParent = this }).Show();
         }
 
-        private void suspendTransactionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            (new Transactions.FrmSuspendActivateTransaction(){ MdiParent = this }).Show();
-        }
-
-
         private void allTransactionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             (new Transactions.FrmAllTransactions(){ MdiParent = this }).Show();

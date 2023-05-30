@@ -149,12 +149,6 @@
     <Compile Include="Forms\Transactions\FrmNewTransaction.Designer.cs">
       <DependentUpon>FrmNewTransaction.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Transactions\FrmSuspendActivateTransaction.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Transactions\FrmSuspendActivateTransaction.Designer.cs">
-      <DependentUpon>FrmSuspendActivateTransaction.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Users\FrmAllUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,9 +291,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Transactions\FrmNewTransaction.resx">
       <DependentUpon>FrmNewTransaction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Transactions\FrmSuspendActivateTransaction.resx">
-      <DependentUpon>FrmSuspendActivateTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users\FrmAllUsers.resx">
       <DependentUpon>FrmAllUsers.cs</DependentUpon>
