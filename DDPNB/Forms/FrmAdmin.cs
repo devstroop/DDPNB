@@ -322,5 +322,15 @@ namespace DDPNB.Forms
         {
             (new Users.UserRoles.FrmAllUserRoles() { MdiParent = this }).Show();
         }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new FrmProfile()).ShowDialog();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new FrmLogout()).ShowDialog();
+        }
     }
 }
