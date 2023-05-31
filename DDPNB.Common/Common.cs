@@ -33,6 +33,7 @@ namespace DDPNB
             set
             {
                 _Session = value;
+                if (User == null) return;
                 if (!User.MultiSession)
                 {
                     foreach (Data.Session existingSession in data.Sessions.Where(elem => elem.UserId == User.Id))

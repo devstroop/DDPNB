@@ -12,6 +12,7 @@ namespace DDPNB.Forms
 {
     public partial class FrmAdmin : Form
     {
+        DDPNB.Data.DataClassesDataContext data = new Data.DataClassesDataContext();
         public FrmAdmin()
         {
             InitializeComponent();
@@ -19,7 +20,6 @@ namespace DDPNB.Forms
 
         private void FrmAdmin_Load(object sender, EventArgs e)
         {
-            DDPNB.Data.DataClassesDataContext data = new Data.DataClassesDataContext();
             if (data.Users.Count() == 0) 
             {
                 InitialSetup();
@@ -330,7 +330,15 @@ namespace DDPNB.Forms
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            (new FrmLogout()).ShowDialog();
+            DialogResult result = MessageBox.Show("Are you sure you want to logout?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                data.Sessions.DeleteOnSubmit(data.Sessions.Single(elem => elem.Id == Common.Session.Id));
+                data.SubmitChanges();
+                Common.Session = null;
+                FrmAdmin_Load(sender, e);
+            }
         }
     }
 }
